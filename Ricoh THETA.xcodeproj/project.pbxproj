@@ -7,21 +7,164 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		201AAC1F1D53988D00967956 /* TakePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201AAC1E1D53988D00967956 /* TakePhotoViewController.swift */; };
+		202C8E5C1D524F9F00A551B2 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 202C8E5B1D524F9F00A551B2 /* libiconv.tbd */; };
 		205404F71D5243790030AE21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205404F61D5243790030AE21 /* AppDelegate.swift */; };
-		205404F91D5243790030AE21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205404F81D5243790030AE21 /* ViewController.swift */; };
+		205404F91D5243790030AE21 /* ConnectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205404F81D5243790030AE21 /* ConnectViewController.swift */; };
 		205404FC1D5243790030AE21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 205404FA1D5243790030AE21 /* Main.storyboard */; };
 		205404FE1D5243790030AE21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 205404FD1D5243790030AE21 /* Assets.xcassets */; };
 		205405011D5243790030AE21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 205404FF1D5243790030AE21 /* LaunchScreen.storyboard */; };
+		205405671D52441A0030AE21 /* PtpConnection.html in Resources */ = {isa = PBXBuildFile; fileRef = 2054050B1D5244190030AE21 /* PtpConnection.html */; };
+		205405681D52441A0030AE21 /* PtpIpDeviceInfo.html in Resources */ = {isa = PBXBuildFile; fileRef = 2054050C1D5244190030AE21 /* PtpIpDeviceInfo.html */; };
+		205405691D52441A0030AE21 /* PtpIpDevicePropDesc.html in Resources */ = {isa = PBXBuildFile; fileRef = 2054050D1D5244190030AE21 /* PtpIpDevicePropDesc.html */; };
+		2054056A1D52441A0030AE21 /* PtpIpInitiator.html in Resources */ = {isa = PBXBuildFile; fileRef = 2054050E1D5244190030AE21 /* PtpIpInitiator.html */; };
+		2054056B1D52441A0030AE21 /* PtpIpObjectInfo.html in Resources */ = {isa = PBXBuildFile; fileRef = 2054050F1D5244190030AE21 /* PtpIpObjectInfo.html */; };
+		2054056C1D52441A0030AE21 /* PtpIpSession.html in Resources */ = {isa = PBXBuildFile; fileRef = 205405101D5244190030AE21 /* PtpIpSession.html */; };
+		2054056D1D52441A0030AE21 /* PtpIpStorageInfo.html in Resources */ = {isa = PBXBuildFile; fileRef = 205405111D5244190030AE21 /* PtpIpStorageInfo.html */; };
+		2054056E1D52441A0030AE21 /* PtpOperation.html in Resources */ = {isa = PBXBuildFile; fileRef = 205405121D5244190030AE21 /* PtpOperation.html */; };
+		2054056F1D52441A0030AE21 /* RicohEXIF.html in Resources */ = {isa = PBXBuildFile; fileRef = 205405131D5244190030AE21 /* RicohEXIF.html */; };
+		205405701D52441A0030AE21 /* kDatatype.html in Resources */ = {isa = PBXBuildFile; fileRef = 205405151D5244190030AE21 /* kDatatype.html */; };
+		205405711D52441A0030AE21 /* kFormFlag.html in Resources */ = {isa = PBXBuildFile; fileRef = 205405161D5244190030AE21 /* kFormFlag.html */; };
+		205405721D52441A0030AE21 /* kGetSet.html in Resources */ = {isa = PBXBuildFile; fileRef = 205405171D5244190030AE21 /* kGetSet.html */; };
+		205405731D52441A0030AE21 /* styles.css in Resources */ = {isa = PBXBuildFile; fileRef = 205405191D5244190030AE21 /* styles.css */; };
+		205405741D52441A0030AE21 /* stylesPrint.css in Resources */ = {isa = PBXBuildFile; fileRef = 2054051A1D5244190030AE21 /* stylesPrint.css */; };
+		205405751D52441A0030AE21 /* hierarchy.html in Resources */ = {isa = PBXBuildFile; fileRef = 2054051B1D5244190030AE21 /* hierarchy.html */; };
+		205405761D52441A0030AE21 /* button_bar_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 2054051D1D5244190030AE21 /* button_bar_background.png */; };
+		205405771D52441A0030AE21 /* disclosure.png in Resources */ = {isa = PBXBuildFile; fileRef = 2054051E1D5244190030AE21 /* disclosure.png */; };
+		205405781D52441A0030AE21 /* disclosure_open.png in Resources */ = {isa = PBXBuildFile; fileRef = 2054051F1D5244190030AE21 /* disclosure_open.png */; };
+		205405791D52441A0030AE21 /* library_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 205405201D5244190030AE21 /* library_background.png */; };
+		2054057A1D52441A0030AE21 /* title_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 205405211D5244190030AE21 /* title_background.png */; };
+		2054057B1D52441A0030AE21 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 205405221D5244190030AE21 /* index.html */; };
+		2054057C1D52441A0030AE21 /* PtpIpEventListener.html in Resources */ = {isa = PBXBuildFile; fileRef = 205405241D5244190030AE21 /* PtpIpEventListener.html */; };
+		2054057D1D52441A0030AE21 /* ExifRawData.mm in Sources */ = {isa = PBXBuildFile; fileRef = 205405271D5244190030AE21 /* ExifRawData.mm */; };
+		2054057E1D52441A0030AE21 /* ExifTags.m in Sources */ = {isa = PBXBuildFile; fileRef = 205405291D5244190030AE21 /* ExifTags.m */; };
+		2054057F1D52441A0030AE21 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 2054052A1D5244190030AE21 /* README */; };
+		205405801D52441A0030AE21 /* RicohEXIF.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2054052C1D5244190030AE21 /* RicohEXIF.mm */; };
+		205405811D52441A0030AE21 /* LibLogging.mm in Sources */ = {isa = PBXBuildFile; fileRef = 205405301D5244190030AE21 /* LibLogging.mm */; };
+		205405821D52441A0030AE21 /* logger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 205405311D5244190030AE21 /* logger.cpp */; };
+		205405831D52441A0030AE21 /* ObjcLogger.mm in Sources */ = {isa = PBXBuildFile; fileRef = 205405351D5244190030AE21 /* ObjcLogger.mm */; };
+		205405841D52441A0030AE21 /* basictypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 205405371D5244190030AE21 /* basictypes.cpp */; };
+		205405851D52441A0030AE21 /* bufferedsock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 205405391D5244190030AE21 /* bufferedsock.cpp */; };
+		205405861D52441A0030AE21 /* bytestream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2054053B1D5244190030AE21 /* bytestream.cpp */; };
+		205405871D52441A0030AE21 /* exceptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2054053F1D5244190030AE21 /* exceptions.cpp */; };
+		205405881D52441A0030AE21 /* int128_t.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 205405411D5244190030AE21 /* int128_t.cpp */; };
+		205405891D52441A0030AE21 /* ptp_packets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 205405431D5244190030AE21 /* ptp_packets.cpp */; };
+		2054058A1D52441A0030AE21 /* ptpip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 205405451D5244190030AE21 /* ptpip.cpp */; };
+		2054058B1D52441A0030AE21 /* ptpip_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 205405471D5244190030AE21 /* ptpip_impl.cpp */; };
+		2054058C1D52441A0030AE21 /* ptpip_packets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 205405481D5244190030AE21 /* ptpip_packets.cpp */; };
+		2054058D1D52441A0030AE21 /* ptpip_packets_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2054054A1D5244190030AE21 /* ptpip_packets_impl.cpp */; };
+		2054058E1D52441A0030AE21 /* PtpIpDeviceInfo.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2054054C1D5244190030AE21 /* PtpIpDeviceInfo.mm */; };
+		2054058F1D52441A0030AE21 /* PtpIpDevicePropDesc.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2054054E1D5244190030AE21 /* PtpIpDevicePropDesc.mm */; };
+		205405901D52441A0030AE21 /* PtpIpInitiator.mm in Sources */ = {isa = PBXBuildFile; fileRef = 205405501D5244190030AE21 /* PtpIpInitiator.mm */; };
+		205405911D52441A0030AE21 /* PtpIpObjectContainer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 205405521D5244190030AE21 /* PtpIpObjectContainer.mm */; };
+		205405921D52441A0030AE21 /* PtpIpObjectInfo.mm in Sources */ = {isa = PBXBuildFile; fileRef = 205405541D5244190030AE21 /* PtpIpObjectInfo.mm */; };
+		205405931D52441A0030AE21 /* PtpIpSession+dcf.mm in Sources */ = {isa = PBXBuildFile; fileRef = 205405561D5244190030AE21 /* PtpIpSession+dcf.mm */; };
+		205405941D52441A0030AE21 /* PtpIpSession.mm in Sources */ = {isa = PBXBuildFile; fileRef = 205405581D5244190030AE21 /* PtpIpSession.mm */; };
+		205405951D52441A0030AE21 /* PtpIpStorageInfo.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2054055A1D5244190030AE21 /* PtpIpStorageInfo.mm */; };
+		205405961D52441A0030AE21 /* variant.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2054055B1D5244190030AE21 /* variant.cpp */; };
+		205405971D52441A0030AE21 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 2054055D1D5244190030AE21 /* README */; };
+		205405981D52441A0030AE21 /* PtpConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 205405611D52441A0030AE21 /* PtpConnection.m */; };
+		205405991D52441A0030AE21 /* PtpLogging.mm in Sources */ = {isa = PBXBuildFile; fileRef = 205405631D52441A0030AE21 /* PtpLogging.mm */; };
+		2054059A1D52441A0030AE21 /* PtpOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = 205405651D52441A0030AE21 /* PtpOperator.m */; };
+		2054059B1D52441A0030AE21 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 205405661D52441A0030AE21 /* README */; };
+		205405A11D5246400030AE21 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 205405A01D5246400030AE21 /* ImageIO.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		201AAC1E1D53988D00967956 /* TakePhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakePhotoViewController.swift; sourceTree = "<group>"; };
+		202C8E5B1D524F9F00A551B2 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		202C8E5D1D52505500A551B2 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		205404F31D5243790030AE21 /* Ricoh THETA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ricoh THETA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		205404F61D5243790030AE21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		205404F81D5243790030AE21 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		205404F81D5243790030AE21 /* ConnectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectViewController.swift; sourceTree = "<group>"; };
 		205404FB1D5243790030AE21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		205404FD1D5243790030AE21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		205405001D5243790030AE21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		205405021D5243790030AE21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2054050B1D5244190030AE21 /* PtpConnection.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = PtpConnection.html; sourceTree = "<group>"; };
+		2054050C1D5244190030AE21 /* PtpIpDeviceInfo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = PtpIpDeviceInfo.html; sourceTree = "<group>"; };
+		2054050D1D5244190030AE21 /* PtpIpDevicePropDesc.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = PtpIpDevicePropDesc.html; sourceTree = "<group>"; };
+		2054050E1D5244190030AE21 /* PtpIpInitiator.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = PtpIpInitiator.html; sourceTree = "<group>"; };
+		2054050F1D5244190030AE21 /* PtpIpObjectInfo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = PtpIpObjectInfo.html; sourceTree = "<group>"; };
+		205405101D5244190030AE21 /* PtpIpSession.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = PtpIpSession.html; sourceTree = "<group>"; };
+		205405111D5244190030AE21 /* PtpIpStorageInfo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = PtpIpStorageInfo.html; sourceTree = "<group>"; };
+		205405121D5244190030AE21 /* PtpOperation.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = PtpOperation.html; sourceTree = "<group>"; };
+		205405131D5244190030AE21 /* RicohEXIF.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = RicohEXIF.html; sourceTree = "<group>"; };
+		205405151D5244190030AE21 /* kDatatype.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = kDatatype.html; sourceTree = "<group>"; };
+		205405161D5244190030AE21 /* kFormFlag.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = kFormFlag.html; sourceTree = "<group>"; };
+		205405171D5244190030AE21 /* kGetSet.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = kGetSet.html; sourceTree = "<group>"; };
+		205405191D5244190030AE21 /* styles.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = styles.css; sourceTree = "<group>"; };
+		2054051A1D5244190030AE21 /* stylesPrint.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = stylesPrint.css; sourceTree = "<group>"; };
+		2054051B1D5244190030AE21 /* hierarchy.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = hierarchy.html; sourceTree = "<group>"; };
+		2054051D1D5244190030AE21 /* button_bar_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_bar_background.png; sourceTree = "<group>"; };
+		2054051E1D5244190030AE21 /* disclosure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disclosure.png; sourceTree = "<group>"; };
+		2054051F1D5244190030AE21 /* disclosure_open.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disclosure_open.png; sourceTree = "<group>"; };
+		205405201D5244190030AE21 /* library_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = library_background.png; sourceTree = "<group>"; };
+		205405211D5244190030AE21 /* title_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title_background.png; sourceTree = "<group>"; };
+		205405221D5244190030AE21 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		205405241D5244190030AE21 /* PtpIpEventListener.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = PtpIpEventListener.html; sourceTree = "<group>"; };
+		205405261D5244190030AE21 /* ExifRawData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExifRawData.h; sourceTree = "<group>"; };
+		205405271D5244190030AE21 /* ExifRawData.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ExifRawData.mm; sourceTree = "<group>"; };
+		205405281D5244190030AE21 /* ExifTags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExifTags.h; sourceTree = "<group>"; };
+		205405291D5244190030AE21 /* ExifTags.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExifTags.m; sourceTree = "<group>"; };
+		2054052A1D5244190030AE21 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		2054052B1D5244190030AE21 /* RicohEXIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RicohEXIF.h; sourceTree = "<group>"; };
+		2054052C1D5244190030AE21 /* RicohEXIF.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RicohEXIF.mm; sourceTree = "<group>"; };
+		2054052F1D5244190030AE21 /* LibLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibLogging.h; sourceTree = "<group>"; };
+		205405301D5244190030AE21 /* LibLogging.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LibLogging.mm; sourceTree = "<group>"; };
+		205405311D5244190030AE21 /* logger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = logger.cpp; sourceTree = "<group>"; };
+		205405321D5244190030AE21 /* logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = logger.h; sourceTree = "<group>"; };
+		205405331D5244190030AE21 /* ObjcLogger+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ObjcLogger+Extension.h"; sourceTree = "<group>"; };
+		205405341D5244190030AE21 /* ObjcLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjcLogger.h; sourceTree = "<group>"; };
+		205405351D5244190030AE21 /* ObjcLogger.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ObjcLogger.mm; sourceTree = "<group>"; };
+		205405371D5244190030AE21 /* basictypes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = basictypes.cpp; sourceTree = "<group>"; };
+		205405381D5244190030AE21 /* basictypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = basictypes.h; sourceTree = "<group>"; };
+		205405391D5244190030AE21 /* bufferedsock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bufferedsock.cpp; sourceTree = "<group>"; };
+		2054053A1D5244190030AE21 /* bufferedsock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bufferedsock.h; sourceTree = "<group>"; };
+		2054053B1D5244190030AE21 /* bytestream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bytestream.cpp; sourceTree = "<group>"; };
+		2054053C1D5244190030AE21 /* bytestream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bytestream.h; sourceTree = "<group>"; };
+		2054053D1D5244190030AE21 /* codes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = codes.h; sourceTree = "<group>"; };
+		2054053E1D5244190030AE21 /* codes_c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = codes_c.h; sourceTree = "<group>"; };
+		2054053F1D5244190030AE21 /* exceptions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = exceptions.cpp; sourceTree = "<group>"; };
+		205405401D5244190030AE21 /* exceptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = exceptions.h; sourceTree = "<group>"; };
+		205405411D5244190030AE21 /* int128_t.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = int128_t.cpp; sourceTree = "<group>"; };
+		205405421D5244190030AE21 /* int128_t.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = int128_t.h; sourceTree = "<group>"; };
+		205405431D5244190030AE21 /* ptp_packets.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ptp_packets.cpp; sourceTree = "<group>"; };
+		205405441D5244190030AE21 /* ptp_packets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ptp_packets.h; sourceTree = "<group>"; };
+		205405451D5244190030AE21 /* ptpip.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ptpip.cpp; sourceTree = "<group>"; };
+		205405461D5244190030AE21 /* ptpip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ptpip.h; sourceTree = "<group>"; };
+		205405471D5244190030AE21 /* ptpip_impl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ptpip_impl.cpp; sourceTree = "<group>"; };
+		205405481D5244190030AE21 /* ptpip_packets.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ptpip_packets.cpp; sourceTree = "<group>"; };
+		205405491D5244190030AE21 /* ptpip_packets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ptpip_packets.h; sourceTree = "<group>"; };
+		2054054A1D5244190030AE21 /* ptpip_packets_impl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ptpip_packets_impl.cpp; sourceTree = "<group>"; };
+		2054054B1D5244190030AE21 /* PtpIpDeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PtpIpDeviceInfo.h; sourceTree = "<group>"; };
+		2054054C1D5244190030AE21 /* PtpIpDeviceInfo.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PtpIpDeviceInfo.mm; sourceTree = "<group>"; };
+		2054054D1D5244190030AE21 /* PtpIpDevicePropDesc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PtpIpDevicePropDesc.h; sourceTree = "<group>"; };
+		2054054E1D5244190030AE21 /* PtpIpDevicePropDesc.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PtpIpDevicePropDesc.mm; sourceTree = "<group>"; };
+		2054054F1D5244190030AE21 /* PtpIpInitiator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PtpIpInitiator.h; sourceTree = "<group>"; };
+		205405501D5244190030AE21 /* PtpIpInitiator.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PtpIpInitiator.mm; sourceTree = "<group>"; };
+		205405511D5244190030AE21 /* PtpIpObjectContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PtpIpObjectContainer.h; sourceTree = "<group>"; };
+		205405521D5244190030AE21 /* PtpIpObjectContainer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PtpIpObjectContainer.mm; sourceTree = "<group>"; };
+		205405531D5244190030AE21 /* PtpIpObjectInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PtpIpObjectInfo.h; sourceTree = "<group>"; };
+		205405541D5244190030AE21 /* PtpIpObjectInfo.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PtpIpObjectInfo.mm; sourceTree = "<group>"; };
+		205405551D5244190030AE21 /* PtpIpSession+dcf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PtpIpSession+dcf.h"; sourceTree = "<group>"; };
+		205405561D5244190030AE21 /* PtpIpSession+dcf.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "PtpIpSession+dcf.mm"; sourceTree = "<group>"; };
+		205405571D5244190030AE21 /* PtpIpSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PtpIpSession.h; sourceTree = "<group>"; };
+		205405581D5244190030AE21 /* PtpIpSession.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PtpIpSession.mm; sourceTree = "<group>"; };
+		205405591D5244190030AE21 /* PtpIpStorageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PtpIpStorageInfo.h; sourceTree = "<group>"; };
+		2054055A1D5244190030AE21 /* PtpIpStorageInfo.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PtpIpStorageInfo.mm; sourceTree = "<group>"; };
+		2054055B1D5244190030AE21 /* variant.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = variant.cpp; sourceTree = "<group>"; };
+		2054055C1D5244190030AE21 /* variant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = variant.h; sourceTree = "<group>"; };
+		2054055D1D5244190030AE21 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		2054055F1D52441A0030AE21 /* PtpConnection+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PtpConnection+Extension.h"; sourceTree = "<group>"; };
+		205405601D52441A0030AE21 /* PtpConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PtpConnection.h; sourceTree = "<group>"; };
+		205405611D52441A0030AE21 /* PtpConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PtpConnection.m; sourceTree = "<group>"; };
+		205405621D52441A0030AE21 /* PtpLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PtpLogging.h; sourceTree = "<group>"; };
+		205405631D52441A0030AE21 /* PtpLogging.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PtpLogging.mm; sourceTree = "<group>"; };
+		205405641D52441A0030AE21 /* PtpOperator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PtpOperator.h; sourceTree = "<group>"; };
+		205405651D52441A0030AE21 /* PtpOperator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PtpOperator.m; sourceTree = "<group>"; };
+		205405661D52441A0030AE21 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		205405A01D5246400030AE21 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +172,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				202C8E5C1D524F9F00A551B2 /* libiconv.tbd in Frameworks */,
+				205405A11D5246400030AE21 /* ImageIO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +183,9 @@
 		205404EA1D5243790030AE21 = {
 			isa = PBXGroup;
 			children = (
+				202C8E5B1D524F9F00A551B2 /* libiconv.tbd */,
+				205405A01D5246400030AE21 /* ImageIO.framework */,
+				205405081D5244190030AE21 /* lib */,
 				205404F51D5243790030AE21 /* Ricoh THETA */,
 				205404F41D5243790030AE21 /* Products */,
 			);
@@ -54,14 +202,194 @@
 		205404F51D5243790030AE21 /* Ricoh THETA */ = {
 			isa = PBXGroup;
 			children = (
+				202C8E5D1D52505500A551B2 /* Bridging-Header.h */,
 				205404F61D5243790030AE21 /* AppDelegate.swift */,
-				205404F81D5243790030AE21 /* ViewController.swift */,
+				205404F81D5243790030AE21 /* ConnectViewController.swift */,
 				205404FA1D5243790030AE21 /* Main.storyboard */,
 				205404FD1D5243790030AE21 /* Assets.xcassets */,
 				205404FF1D5243790030AE21 /* LaunchScreen.storyboard */,
 				205405021D5243790030AE21 /* Info.plist */,
+				201AAC1E1D53988D00967956 /* TakePhotoViewController.swift */,
 			);
 			path = "Ricoh THETA";
+			sourceTree = "<group>";
+		};
+		205405081D5244190030AE21 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				205405091D5244190030AE21 /* doc */,
+				205405251D5244190030AE21 /* lib-r-exif */,
+				2054052D1D5244190030AE21 /* lib-ricoh-theta */,
+				2054055E1D5244190030AE21 /* lib-ricoh-theta_serializer */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		205405091D5244190030AE21 /* doc */ = {
+			isa = PBXGroup;
+			children = (
+				2054050A1D5244190030AE21 /* Classes */,
+				205405141D5244190030AE21 /* Constants */,
+				205405181D5244190030AE21 /* css */,
+				2054051B1D5244190030AE21 /* hierarchy.html */,
+				2054051C1D5244190030AE21 /* img */,
+				205405221D5244190030AE21 /* index.html */,
+				205405231D5244190030AE21 /* Protocols */,
+			);
+			path = doc;
+			sourceTree = "<group>";
+		};
+		2054050A1D5244190030AE21 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2054050B1D5244190030AE21 /* PtpConnection.html */,
+				2054050C1D5244190030AE21 /* PtpIpDeviceInfo.html */,
+				2054050D1D5244190030AE21 /* PtpIpDevicePropDesc.html */,
+				2054050E1D5244190030AE21 /* PtpIpInitiator.html */,
+				2054050F1D5244190030AE21 /* PtpIpObjectInfo.html */,
+				205405101D5244190030AE21 /* PtpIpSession.html */,
+				205405111D5244190030AE21 /* PtpIpStorageInfo.html */,
+				205405121D5244190030AE21 /* PtpOperation.html */,
+				205405131D5244190030AE21 /* RicohEXIF.html */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		205405141D5244190030AE21 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				205405151D5244190030AE21 /* kDatatype.html */,
+				205405161D5244190030AE21 /* kFormFlag.html */,
+				205405171D5244190030AE21 /* kGetSet.html */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		205405181D5244190030AE21 /* css */ = {
+			isa = PBXGroup;
+			children = (
+				205405191D5244190030AE21 /* styles.css */,
+				2054051A1D5244190030AE21 /* stylesPrint.css */,
+			);
+			path = css;
+			sourceTree = "<group>";
+		};
+		2054051C1D5244190030AE21 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				2054051D1D5244190030AE21 /* button_bar_background.png */,
+				2054051E1D5244190030AE21 /* disclosure.png */,
+				2054051F1D5244190030AE21 /* disclosure_open.png */,
+				205405201D5244190030AE21 /* library_background.png */,
+				205405211D5244190030AE21 /* title_background.png */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
+		205405231D5244190030AE21 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				205405241D5244190030AE21 /* PtpIpEventListener.html */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		205405251D5244190030AE21 /* lib-r-exif */ = {
+			isa = PBXGroup;
+			children = (
+				205405261D5244190030AE21 /* ExifRawData.h */,
+				205405271D5244190030AE21 /* ExifRawData.mm */,
+				205405281D5244190030AE21 /* ExifTags.h */,
+				205405291D5244190030AE21 /* ExifTags.m */,
+				2054052A1D5244190030AE21 /* README */,
+				2054052B1D5244190030AE21 /* RicohEXIF.h */,
+				2054052C1D5244190030AE21 /* RicohEXIF.mm */,
+			);
+			path = "lib-r-exif";
+			sourceTree = "<group>";
+		};
+		2054052D1D5244190030AE21 /* lib-ricoh-theta */ = {
+			isa = PBXGroup;
+			children = (
+				2054052E1D5244190030AE21 /* liblogger */,
+				205405361D5244190030AE21 /* libptpip */,
+				2054055D1D5244190030AE21 /* README */,
+			);
+			path = "lib-ricoh-theta";
+			sourceTree = "<group>";
+		};
+		2054052E1D5244190030AE21 /* liblogger */ = {
+			isa = PBXGroup;
+			children = (
+				2054052F1D5244190030AE21 /* LibLogging.h */,
+				205405301D5244190030AE21 /* LibLogging.mm */,
+				205405311D5244190030AE21 /* logger.cpp */,
+				205405321D5244190030AE21 /* logger.h */,
+				205405331D5244190030AE21 /* ObjcLogger+Extension.h */,
+				205405341D5244190030AE21 /* ObjcLogger.h */,
+				205405351D5244190030AE21 /* ObjcLogger.mm */,
+			);
+			path = liblogger;
+			sourceTree = "<group>";
+		};
+		205405361D5244190030AE21 /* libptpip */ = {
+			isa = PBXGroup;
+			children = (
+				205405371D5244190030AE21 /* basictypes.cpp */,
+				205405381D5244190030AE21 /* basictypes.h */,
+				205405391D5244190030AE21 /* bufferedsock.cpp */,
+				2054053A1D5244190030AE21 /* bufferedsock.h */,
+				2054053B1D5244190030AE21 /* bytestream.cpp */,
+				2054053C1D5244190030AE21 /* bytestream.h */,
+				2054053D1D5244190030AE21 /* codes.h */,
+				2054053E1D5244190030AE21 /* codes_c.h */,
+				2054053F1D5244190030AE21 /* exceptions.cpp */,
+				205405401D5244190030AE21 /* exceptions.h */,
+				205405411D5244190030AE21 /* int128_t.cpp */,
+				205405421D5244190030AE21 /* int128_t.h */,
+				205405431D5244190030AE21 /* ptp_packets.cpp */,
+				205405441D5244190030AE21 /* ptp_packets.h */,
+				205405451D5244190030AE21 /* ptpip.cpp */,
+				205405461D5244190030AE21 /* ptpip.h */,
+				205405471D5244190030AE21 /* ptpip_impl.cpp */,
+				205405481D5244190030AE21 /* ptpip_packets.cpp */,
+				205405491D5244190030AE21 /* ptpip_packets.h */,
+				2054054A1D5244190030AE21 /* ptpip_packets_impl.cpp */,
+				2054054B1D5244190030AE21 /* PtpIpDeviceInfo.h */,
+				2054054C1D5244190030AE21 /* PtpIpDeviceInfo.mm */,
+				2054054D1D5244190030AE21 /* PtpIpDevicePropDesc.h */,
+				2054054E1D5244190030AE21 /* PtpIpDevicePropDesc.mm */,
+				2054054F1D5244190030AE21 /* PtpIpInitiator.h */,
+				205405501D5244190030AE21 /* PtpIpInitiator.mm */,
+				205405511D5244190030AE21 /* PtpIpObjectContainer.h */,
+				205405521D5244190030AE21 /* PtpIpObjectContainer.mm */,
+				205405531D5244190030AE21 /* PtpIpObjectInfo.h */,
+				205405541D5244190030AE21 /* PtpIpObjectInfo.mm */,
+				205405551D5244190030AE21 /* PtpIpSession+dcf.h */,
+				205405561D5244190030AE21 /* PtpIpSession+dcf.mm */,
+				205405571D5244190030AE21 /* PtpIpSession.h */,
+				205405581D5244190030AE21 /* PtpIpSession.mm */,
+				205405591D5244190030AE21 /* PtpIpStorageInfo.h */,
+				2054055A1D5244190030AE21 /* PtpIpStorageInfo.mm */,
+				2054055B1D5244190030AE21 /* variant.cpp */,
+				2054055C1D5244190030AE21 /* variant.h */,
+			);
+			path = libptpip;
+			sourceTree = "<group>";
+		};
+		2054055E1D5244190030AE21 /* lib-ricoh-theta_serializer */ = {
+			isa = PBXGroup;
+			children = (
+				2054055F1D52441A0030AE21 /* PtpConnection+Extension.h */,
+				205405601D52441A0030AE21 /* PtpConnection.h */,
+				205405611D52441A0030AE21 /* PtpConnection.m */,
+				205405621D52441A0030AE21 /* PtpLogging.h */,
+				205405631D52441A0030AE21 /* PtpLogging.mm */,
+				205405641D52441A0030AE21 /* PtpOperator.h */,
+				205405651D52441A0030AE21 /* PtpOperator.m */,
+				205405661D52441A0030AE21 /* README */,
+			);
+			path = "lib-ricoh-theta_serializer";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +450,34 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2054057F1D52441A0030AE21 /* README in Resources */,
 				205405011D5243790030AE21 /* LaunchScreen.storyboard in Resources */,
+				205405681D52441A0030AE21 /* PtpIpDeviceInfo.html in Resources */,
+				2054057C1D52441A0030AE21 /* PtpIpEventListener.html in Resources */,
+				2054057A1D52441A0030AE21 /* title_background.png in Resources */,
+				205405691D52441A0030AE21 /* PtpIpDevicePropDesc.html in Resources */,
+				205405701D52441A0030AE21 /* kDatatype.html in Resources */,
+				205405761D52441A0030AE21 /* button_bar_background.png in Resources */,
+				205405721D52441A0030AE21 /* kGetSet.html in Resources */,
+				205405971D52441A0030AE21 /* README in Resources */,
+				205405731D52441A0030AE21 /* styles.css in Resources */,
+				2054056C1D52441A0030AE21 /* PtpIpSession.html in Resources */,
+				205405671D52441A0030AE21 /* PtpConnection.html in Resources */,
 				205404FE1D5243790030AE21 /* Assets.xcassets in Resources */,
+				205405771D52441A0030AE21 /* disclosure.png in Resources */,
+				205405791D52441A0030AE21 /* library_background.png in Resources */,
+				2054056F1D52441A0030AE21 /* RicohEXIF.html in Resources */,
+				2054056A1D52441A0030AE21 /* PtpIpInitiator.html in Resources */,
 				205404FC1D5243790030AE21 /* Main.storyboard in Resources */,
+				2054056D1D52441A0030AE21 /* PtpIpStorageInfo.html in Resources */,
+				2054059B1D52441A0030AE21 /* README in Resources */,
+				2054056E1D52441A0030AE21 /* PtpOperation.html in Resources */,
+				205405711D52441A0030AE21 /* kFormFlag.html in Resources */,
+				205405741D52441A0030AE21 /* stylesPrint.css in Resources */,
+				205405751D52441A0030AE21 /* hierarchy.html in Resources */,
+				2054057B1D52441A0030AE21 /* index.html in Resources */,
+				205405781D52441A0030AE21 /* disclosure_open.png in Resources */,
+				2054056B1D52441A0030AE21 /* PtpIpObjectInfo.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +488,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				205404F91D5243790030AE21 /* ViewController.swift in Sources */,
+				205405911D52441A0030AE21 /* PtpIpObjectContainer.mm in Sources */,
+				205405861D52441A0030AE21 /* bytestream.cpp in Sources */,
+				205405981D52441A0030AE21 /* PtpConnection.m in Sources */,
+				205405841D52441A0030AE21 /* basictypes.cpp in Sources */,
+				205405921D52441A0030AE21 /* PtpIpObjectInfo.mm in Sources */,
+				2054058E1D52441A0030AE21 /* PtpIpDeviceInfo.mm in Sources */,
+				205405901D52441A0030AE21 /* PtpIpInitiator.mm in Sources */,
+				2054057E1D52441A0030AE21 /* ExifTags.m in Sources */,
+				205405811D52441A0030AE21 /* LibLogging.mm in Sources */,
+				205404F91D5243790030AE21 /* ConnectViewController.swift in Sources */,
+				205405851D52441A0030AE21 /* bufferedsock.cpp in Sources */,
+				2054058F1D52441A0030AE21 /* PtpIpDevicePropDesc.mm in Sources */,
+				205405831D52441A0030AE21 /* ObjcLogger.mm in Sources */,
+				205405961D52441A0030AE21 /* variant.cpp in Sources */,
+				2054059A1D52441A0030AE21 /* PtpOperator.m in Sources */,
+				205405991D52441A0030AE21 /* PtpLogging.mm in Sources */,
+				205405931D52441A0030AE21 /* PtpIpSession+dcf.mm in Sources */,
+				2054058A1D52441A0030AE21 /* ptpip.cpp in Sources */,
+				201AAC1F1D53988D00967956 /* TakePhotoViewController.swift in Sources */,
+				2054057D1D52441A0030AE21 /* ExifRawData.mm in Sources */,
+				2054058D1D52441A0030AE21 /* ptpip_packets_impl.cpp in Sources */,
+				205405881D52441A0030AE21 /* int128_t.cpp in Sources */,
+				205405951D52441A0030AE21 /* PtpIpStorageInfo.mm in Sources */,
+				205405821D52441A0030AE21 /* logger.cpp in Sources */,
+				2054058C1D52441A0030AE21 /* ptpip_packets.cpp in Sources */,
+				205405941D52441A0030AE21 /* PtpIpSession.mm in Sources */,
+				205405871D52441A0030AE21 /* exceptions.cpp in Sources */,
+				205405801D52441A0030AE21 /* RicohEXIF.mm in Sources */,
+				2054058B1D52441A0030AE21 /* ptpip_impl.cpp in Sources */,
+				205405891D52441A0030AE21 /* ptp_packets.cpp in Sources */,
 				205404F71D5243790030AE21 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,6 +637,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kazu.Ricoh-THETA";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PRODUCT)Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -266,6 +649,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kazu.Ricoh-THETA";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PRODUCT)Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -288,6 +672,7 @@
 				205405071D5243790030AE21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

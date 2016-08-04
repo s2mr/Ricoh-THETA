@@ -1,0 +1,4114 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>PtpIpSession Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">lib-ricoh-theta </a></h1>
+				<a id="developerHome" href="../index.html">Ricoh Company, Ltd.</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">PtpIpSession Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/deleteObject:">&nbsp;&nbsp;&nbsp;&nbsp;- deleteObject:</option>
+	
+	<option value="//api/name/getAudioVolume">&nbsp;&nbsp;&nbsp;&nbsp;- getAudioVolume</option>
+	
+	<option value="//api/name/getAutoPowerOffDelay">&nbsp;&nbsp;&nbsp;&nbsp;- getAutoPowerOffDelay</option>
+	
+	<option value="//api/name/getBatteryLevel">&nbsp;&nbsp;&nbsp;&nbsp;- getBatteryLevel</option>
+	
+	<option value="//api/name/getCaptureStatus">&nbsp;&nbsp;&nbsp;&nbsp;- getCaptureStatus</option>
+	
+	<option value="//api/name/getChannelNumber">&nbsp;&nbsp;&nbsp;&nbsp;- getChannelNumber</option>
+	
+	<option value="//api/name/getDateTime">&nbsp;&nbsp;&nbsp;&nbsp;- getDateTime</option>
+	
+	<option value="//api/name/getDevicePropDesc:">&nbsp;&nbsp;&nbsp;&nbsp;- getDevicePropDesc:</option>
+	
+	<option value="//api/name/getErrorInfo">&nbsp;&nbsp;&nbsp;&nbsp;- getErrorInfo</option>
+	
+	<option value="//api/name/getExposureBiasCompensation">&nbsp;&nbsp;&nbsp;&nbsp;- getExposureBiasCompensation</option>
+	
+	<option value="//api/name/getExposureIndex">&nbsp;&nbsp;&nbsp;&nbsp;- getExposureIndex</option>
+	
+	<option value="//api/name/getGPSInfo">&nbsp;&nbsp;&nbsp;&nbsp;- getGPSInfo</option>
+	
+	<option value="//api/name/getInt16PropValue:">&nbsp;&nbsp;&nbsp;&nbsp;- getInt16PropValue:</option>
+	
+	<option value="//api/name/getInt32PropValue:">&nbsp;&nbsp;&nbsp;&nbsp;- getInt32PropValue:</option>
+	
+	<option value="//api/name/getInt8PropValue:">&nbsp;&nbsp;&nbsp;&nbsp;- getInt8PropValue:</option>
+	
+	<option value="//api/name/getNumObjects">&nbsp;&nbsp;&nbsp;&nbsp;- getNumObjects</option>
+	
+	<option value="//api/name/getObject:">&nbsp;&nbsp;&nbsp;&nbsp;- getObject:</option>
+	
+	<option value="//api/name/getObjectHandles">&nbsp;&nbsp;&nbsp;&nbsp;- getObjectHandles</option>
+	
+	<option value="//api/name/getObjectInfo:">&nbsp;&nbsp;&nbsp;&nbsp;- getObjectInfo:</option>
+	
+	<option value="//api/name/getRationalPropValue:">&nbsp;&nbsp;&nbsp;&nbsp;- getRationalPropValue:</option>
+	
+	<option value="//api/name/getRecordingTime">&nbsp;&nbsp;&nbsp;&nbsp;- getRecordingTime</option>
+	
+	<option value="//api/name/getRemainingRecordingTime">&nbsp;&nbsp;&nbsp;&nbsp;- getRemainingRecordingTime</option>
+	
+	<option value="//api/name/getResizedImageObject:width:height:onStartData:onChunkReceived:">&nbsp;&nbsp;&nbsp;&nbsp;- getResizedImageObject:width:height:onStartData:onChunkReceived:</option>
+	
+	<option value="//api/name/getShutterSpeed">&nbsp;&nbsp;&nbsp;&nbsp;- getShutterSpeed</option>
+	
+	<option value="//api/name/getSleepDelay">&nbsp;&nbsp;&nbsp;&nbsp;- getSleepDelay</option>
+	
+	<option value="//api/name/getStillCaptureMode">&nbsp;&nbsp;&nbsp;&nbsp;- getStillCaptureMode</option>
+	
+	<option value="//api/name/getStorageIDs">&nbsp;&nbsp;&nbsp;&nbsp;- getStorageIDs</option>
+	
+	<option value="//api/name/getStorageInfo">&nbsp;&nbsp;&nbsp;&nbsp;- getStorageInfo</option>
+	
+	<option value="//api/name/getStringPropValue:">&nbsp;&nbsp;&nbsp;&nbsp;- getStringPropValue:</option>
+	
+	<option value="//api/name/getThumb:">&nbsp;&nbsp;&nbsp;&nbsp;- getThumb:</option>
+	
+	<option value="//api/name/getTimelapseInterval">&nbsp;&nbsp;&nbsp;&nbsp;- getTimelapseInterval</option>
+	
+	<option value="//api/name/getTimelapseNumber">&nbsp;&nbsp;&nbsp;&nbsp;- getTimelapseNumber</option>
+	
+	<option value="//api/name/getUint16PropValue:">&nbsp;&nbsp;&nbsp;&nbsp;- getUint16PropValue:</option>
+	
+	<option value="//api/name/getUint32PropValue:">&nbsp;&nbsp;&nbsp;&nbsp;- getUint32PropValue:</option>
+	
+	<option value="//api/name/getUint8PropValue:">&nbsp;&nbsp;&nbsp;&nbsp;- getUint8PropValue:</option>
+	
+	<option value="//api/name/getWhiteBalance">&nbsp;&nbsp;&nbsp;&nbsp;- getWhiteBalance</option>
+	
+	<option value="//api/name/initiateCapture">&nbsp;&nbsp;&nbsp;&nbsp;- initiateCapture</option>
+	
+	<option value="//api/name/initiateOpenCapture">&nbsp;&nbsp;&nbsp;&nbsp;- initiateOpenCapture</option>
+	
+	<option value="//api/name/setAudioVolume:">&nbsp;&nbsp;&nbsp;&nbsp;- setAudioVolume:</option>
+	
+	<option value="//api/name/setAutoPowerOffDelay:">&nbsp;&nbsp;&nbsp;&nbsp;- setAutoPowerOffDelay:</option>
+	
+	<option value="//api/name/setChannelNumber:">&nbsp;&nbsp;&nbsp;&nbsp;- setChannelNumber:</option>
+	
+	<option value="//api/name/setDateTime:">&nbsp;&nbsp;&nbsp;&nbsp;- setDateTime:</option>
+	
+	<option value="//api/name/setExposureBiasCompensation:">&nbsp;&nbsp;&nbsp;&nbsp;- setExposureBiasCompensation:</option>
+	
+	<option value="//api/name/setExposureIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- setExposureIndex:</option>
+	
+	<option value="//api/name/setGPSInfo:">&nbsp;&nbsp;&nbsp;&nbsp;- setGPSInfo:</option>
+	
+	<option value="//api/name/setInt16PropValue:value:">&nbsp;&nbsp;&nbsp;&nbsp;- setInt16PropValue:value:</option>
+	
+	<option value="//api/name/setInt32PropValue:value:">&nbsp;&nbsp;&nbsp;&nbsp;- setInt32PropValue:value:</option>
+	
+	<option value="//api/name/setInt8PropValue:value:">&nbsp;&nbsp;&nbsp;&nbsp;- setInt8PropValue:value:</option>
+	
+	<option value="//api/name/setRationalPropValue:value:">&nbsp;&nbsp;&nbsp;&nbsp;- setRationalPropValue:value:</option>
+	
+	<option value="//api/name/setShutterSpeed:">&nbsp;&nbsp;&nbsp;&nbsp;- setShutterSpeed:</option>
+	
+	<option value="//api/name/setSleepDelay:">&nbsp;&nbsp;&nbsp;&nbsp;- setSleepDelay:</option>
+	
+	<option value="//api/name/setStillCaptureMode:">&nbsp;&nbsp;&nbsp;&nbsp;- setStillCaptureMode:</option>
+	
+	<option value="//api/name/setStringPropValue:value:">&nbsp;&nbsp;&nbsp;&nbsp;- setStringPropValue:value:</option>
+	
+	<option value="//api/name/setTimelapseInterval:">&nbsp;&nbsp;&nbsp;&nbsp;- setTimelapseInterval:</option>
+	
+	<option value="//api/name/setTimelapseNumber:">&nbsp;&nbsp;&nbsp;&nbsp;- setTimelapseNumber:</option>
+	
+	<option value="//api/name/setUint16PropValue:value:">&nbsp;&nbsp;&nbsp;&nbsp;- setUint16PropValue:value:</option>
+	
+	<option value="//api/name/setUint32PropValue:value:">&nbsp;&nbsp;&nbsp;&nbsp;- setUint32PropValue:value:</option>
+	
+	<option value="//api/name/setUint8PropValue:value:">&nbsp;&nbsp;&nbsp;&nbsp;- setUint8PropValue:value:</option>
+	
+	<option value="//api/name/setWhiteBalance:">&nbsp;&nbsp;&nbsp;&nbsp;- setWhiteBalance:</option>
+	
+	<option value="//api/name/terminateOpenCapture:">&nbsp;&nbsp;&nbsp;&nbsp;- terminateOpenCapture:</option>
+	
+	<option value="//api/name/wlanPowerControl">&nbsp;&nbsp;&nbsp;&nbsp;- wlanPowerControl</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteObject:">deleteObject:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getAudioVolume">getAudioVolume</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getAutoPowerOffDelay">getAutoPowerOffDelay</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getBatteryLevel">getBatteryLevel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getCaptureStatus">getCaptureStatus</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getChannelNumber">getChannelNumber</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getDateTime">getDateTime</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getDevicePropDesc:">getDevicePropDesc:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getErrorInfo">getErrorInfo</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getExposureBiasCompensation">getExposureBiasCompensation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getExposureIndex">getExposureIndex</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getGPSInfo">getGPSInfo</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getInt16PropValue:">getInt16PropValue:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getInt32PropValue:">getInt32PropValue:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getInt8PropValue:">getInt8PropValue:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getNumObjects">getNumObjects</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getObject:">getObject:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getObjectHandles">getObjectHandles</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getObjectInfo:">getObjectInfo:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getRationalPropValue:">getRationalPropValue:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getRecordingTime">getRecordingTime</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getRemainingRecordingTime">getRemainingRecordingTime</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getResizedImageObject:width:height:onStartData:onChunkReceived:">getResizedImageObject:width:height:onStartData:onChunkReceived:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getShutterSpeed">getShutterSpeed</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getSleepDelay">getSleepDelay</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getStillCaptureMode">getStillCaptureMode</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getStorageIDs">getStorageIDs</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getStorageInfo">getStorageInfo</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getStringPropValue:">getStringPropValue:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getThumb:">getThumb:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getTimelapseInterval">getTimelapseInterval</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getTimelapseNumber">getTimelapseNumber</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getUint16PropValue:">getUint16PropValue:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getUint32PropValue:">getUint32PropValue:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getUint8PropValue:">getUint8PropValue:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getWhiteBalance">getWhiteBalance</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initiateCapture">initiateCapture</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initiateOpenCapture">initiateOpenCapture</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setAudioVolume:">setAudioVolume:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setAutoPowerOffDelay:">setAutoPowerOffDelay:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setChannelNumber:">setChannelNumber:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setDateTime:">setDateTime:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setExposureBiasCompensation:">setExposureBiasCompensation:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setExposureIndex:">setExposureIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setGPSInfo:">setGPSInfo:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setInt16PropValue:value:">setInt16PropValue:value:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setInt32PropValue:value:">setInt32PropValue:value:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setInt8PropValue:value:">setInt8PropValue:value:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setRationalPropValue:value:">setRationalPropValue:value:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setShutterSpeed:">setShutterSpeed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setSleepDelay:">setSleepDelay:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setStillCaptureMode:">setStillCaptureMode:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setStringPropValue:value:">setStringPropValue:value:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setTimelapseInterval:">setTimelapseInterval:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setTimelapseNumber:">setTimelapseNumber:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setUint16PropValue:value:">setUint16PropValue:value:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setUint32PropValue:value:">setUint32PropValue:value:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setUint8PropValue:value:">setUint8PropValue:value:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setWhiteBalance:">setWhiteBalance:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/terminateOpenCapture:">terminateOpenCapture:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/wlanPowerControl">wlanPowerControl</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="PtpIpSession Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">PtpIpSession Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">PtpIpSession.h<br />PtpIpSession.mm</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>PTP/IP session management</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getStorageIDs">&ndash;&nbsp;getStorageIDs</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getStorageInfo">&ndash;&nbsp;getStorageInfo</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getNumObjects">&ndash;&nbsp;getNumObjects</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getObjectHandles">&ndash;&nbsp;getObjectHandles</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getObjectInfo:">&ndash;&nbsp;getObjectInfo:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getObject:">&ndash;&nbsp;getObject:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getThumb:">&ndash;&nbsp;getThumb:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deleteObject:">&ndash;&nbsp;deleteObject:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initiateCapture">&ndash;&nbsp;initiateCapture</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/terminateOpenCapture:">&ndash;&nbsp;terminateOpenCapture:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initiateOpenCapture">&ndash;&nbsp;initiateOpenCapture</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getResizedImageObject:width:height:onStartData:onChunkReceived:">&ndash;&nbsp;getResizedImageObject:width:height:onStartData:onChunkReceived:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getDevicePropDesc:">&ndash;&nbsp;getDevicePropDesc:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/wlanPowerControl">&ndash;&nbsp;wlanPowerControl</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getInt8PropValue:">&ndash;&nbsp;getInt8PropValue:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getUint8PropValue:">&ndash;&nbsp;getUint8PropValue:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getInt16PropValue:">&ndash;&nbsp;getInt16PropValue:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getUint16PropValue:">&ndash;&nbsp;getUint16PropValue:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getInt32PropValue:">&ndash;&nbsp;getInt32PropValue:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getUint32PropValue:">&ndash;&nbsp;getUint32PropValue:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getStringPropValue:">&ndash;&nbsp;getStringPropValue:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getRationalPropValue:">&ndash;&nbsp;getRationalPropValue:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setInt8PropValue:value:">&ndash;&nbsp;setInt8PropValue:value:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setUint8PropValue:value:">&ndash;&nbsp;setUint8PropValue:value:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setInt16PropValue:value:">&ndash;&nbsp;setInt16PropValue:value:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setUint16PropValue:value:">&ndash;&nbsp;setUint16PropValue:value:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setInt32PropValue:value:">&ndash;&nbsp;setInt32PropValue:value:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setUint32PropValue:value:">&ndash;&nbsp;setUint32PropValue:value:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setStringPropValue:value:">&ndash;&nbsp;setStringPropValue:value:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setRationalPropValue:value:">&ndash;&nbsp;setRationalPropValue:value:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getBatteryLevel">&ndash;&nbsp;getBatteryLevel</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getWhiteBalance">&ndash;&nbsp;getWhiteBalance</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setWhiteBalance:">&ndash;&nbsp;setWhiteBalance:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getExposureIndex">&ndash;&nbsp;getExposureIndex</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setExposureIndex:">&ndash;&nbsp;setExposureIndex:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getExposureBiasCompensation">&ndash;&nbsp;getExposureBiasCompensation</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setExposureBiasCompensation:">&ndash;&nbsp;setExposureBiasCompensation:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getDateTime">&ndash;&nbsp;getDateTime</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setDateTime:">&ndash;&nbsp;setDateTime:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getStillCaptureMode">&ndash;&nbsp;getStillCaptureMode</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setStillCaptureMode:">&ndash;&nbsp;setStillCaptureMode:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getTimelapseNumber">&ndash;&nbsp;getTimelapseNumber</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setTimelapseNumber:">&ndash;&nbsp;setTimelapseNumber:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getTimelapseInterval">&ndash;&nbsp;getTimelapseInterval</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setTimelapseInterval:">&ndash;&nbsp;setTimelapseInterval:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getAudioVolume">&ndash;&nbsp;getAudioVolume</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setAudioVolume:">&ndash;&nbsp;setAudioVolume:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getErrorInfo">&ndash;&nbsp;getErrorInfo</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getShutterSpeed">&ndash;&nbsp;getShutterSpeed</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setShutterSpeed:">&ndash;&nbsp;setShutterSpeed:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getGPSInfo">&ndash;&nbsp;getGPSInfo</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setGPSInfo:">&ndash;&nbsp;setGPSInfo:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getAutoPowerOffDelay">&ndash;&nbsp;getAutoPowerOffDelay</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setAutoPowerOffDelay:">&ndash;&nbsp;setAutoPowerOffDelay:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getSleepDelay">&ndash;&nbsp;getSleepDelay</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setSleepDelay:">&ndash;&nbsp;setSleepDelay:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getChannelNumber">&ndash;&nbsp;getChannelNumber</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setChannelNumber:">&ndash;&nbsp;setChannelNumber:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getCaptureStatus">&ndash;&nbsp;getCaptureStatus</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getRecordingTime">&ndash;&nbsp;getRecordingTime</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getRemainingRecordingTime">&ndash;&nbsp;getRemainingRecordingTime</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/deleteObject:" title="deleteObject:"></a>
+	<h3 class="subsubtitle method-title">deleteObject:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Deletes objects corresponding to specified object handle.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)deleteObject:(NSInteger)<em>objectHandle</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>objectHandle</em></dt>
+			<dd><p>Object handle</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Successful/failed</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Deletes objects corresponding to specified object handle.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getAudioVolume" title="getAudioVolume"></a>
+	<h3 class="subsubtitle method-title">getAudioVolume</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Acquires shutter sound volume.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSUInteger)getAudioVolume</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Shutter sound volume (%)</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Acquires shutter sound volume.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getAutoPowerOffDelay" title="getAutoPowerOffDelay"></a>
+	<h3 class="subsubtitle method-title">getAutoPowerOffDelay</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Acquires the auto power off setting of the camera (minutes). <br>
+Auto power off is not set if 0 is set.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSUInteger)getAutoPowerOffDelay</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Camera auto power off (minutes)</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Acquires the auto power off setting of the camera (minutes). <br>
+Auto power off is not set if 0 is set.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getBatteryLevel" title="getBatteryLevel"></a>
+	<h3 class="subsubtitle method-title">getBatteryLevel</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Acquires charge level.  There are four detection levels.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSUInteger)getBatteryLevel</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Charge level</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Acquires charge level.  There are four detection levels.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getCaptureStatus" title="getCaptureStatus"></a>
+	<h3 class="subsubtitle method-title">getCaptureStatus</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Acquires shooting operation status of camera.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSUInteger)getCaptureStatus</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Shooting operation status of camera</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Acquires shooting operation status of camera.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getChannelNumber" title="getChannelNumber"></a>
+	<h3 class="subsubtitle method-title">getChannelNumber</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Acquires wireless LAN channel.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSUInteger)getChannelNumber</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Wireless LAN channel</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Acquires wireless LAN channel.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getDateTime" title="getDateTime"></a>
+	<h3 class="subsubtitle method-title">getDateTime</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Acquires the date and time.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSDate *)getDateTime</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Date and time</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Acquires the date and time.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getDevicePropDesc:" title="getDevicePropDesc:"></a>
+	<h3 class="subsubtitle method-title">getDevicePropDesc:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns device property <a href="#//api/name/description">description</a> for specified property.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (PtpIpDevicePropDesc *)getDevicePropDesc:(PTP_DEVICE_PROP_CODE)<em>devicePropCode</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>devicePropCode</em></dt>
+			<dd><p>Property Code</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Device Property Description</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns device property <a href="#//api/name/description">description</a> for specified property.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getErrorInfo" title="getErrorInfo"></a>
+	<h3 class="subsubtitle method-title">getErrorInfo</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Acquires error information.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSUInteger)getErrorInfo</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Error information</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Acquires error information.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getExposureBiasCompensation" title="getExposureBiasCompensation"></a>
+	<h3 class="subsubtitle method-title">getExposureBiasCompensation</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Acquires exposure correction value.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSInteger)getExposureBiasCompensation</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Exposure compensation value</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Acquires exposure correction value.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getExposureIndex" title="getExposureIndex"></a>
+	<h3 class="subsubtitle method-title">getExposureIndex</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Acquires ISO sensitivity.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSInteger)getExposureIndex</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ISO sensitivity</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Acquires ISO sensitivity.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getGPSInfo" title="getGPSInfo"></a>
+	<h3 class="subsubtitle method-title">getGPSInfo</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Acquires GPS information.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)getGPSInfo</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>GPS Information</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Acquires GPS information.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getInt16PropValue:" title="getInt16PropValue:"></a>
+	<h3 class="subsubtitle method-title">getInt16PropValue:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Acquire property value (Int16 format)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSInteger)getInt16PropValue:(PTP_DEVICE_PROP_CODE)<em>devicePropCode</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>devicePropCode</em></dt>
+			<dd><p>Property Code</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Property value</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Acquire property value (Int16 format)</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getInt32PropValue:" title="getInt32PropValue:"></a>
+	<h3 class="subsubtitle method-title">getInt32PropValue:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Acquire property value (Int32 format)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSInteger)getInt32PropValue:(PTP_DEVICE_PROP_CODE)<em>devicePropCode</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>devicePropCode</em></dt>
+			<dd><p>Property Code</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Property value</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Acquire property value (Int32 format)</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getInt8PropValue:" title="getInt8PropValue:"></a>
+	<h3 class="subsubtitle method-title">getInt8PropValue:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Acquire property value (Int8 format)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSInteger)getInt8PropValue:(PTP_DEVICE_PROP_CODE)<em>devicePropCode</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>devicePropCode</em></dt>
+			<dd><p>Property Code</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Property value</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Acquire property value (Int8 format)</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getNumObjects" title="getNumObjects"></a>
+	<h3 class="subsubtitle method-title">getNumObjects</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns object count.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSInteger)getNumObjects</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Object count</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns object count.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getObject:" title="getObject:"></a>
+	<h3 class="subsubtitle method-title">getObject:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns objects corresponding to specified object handle.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (PtpIpObjectContainer *)getObject:(NSInteger)<em>objectHandle</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>objectHandle</em></dt>
+			<dd><p>Object handle</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Object</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns objects corresponding to specified object handle.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getObjectHandles" title="getObjectHandles"></a>
+	<h3 class="subsubtitle method-title">getObjectHandles</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns ObjectHandle.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)getObjectHandles</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ObjectHandle array</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns ObjectHandle.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getObjectInfo:" title="getObjectInfo:"></a>
+	<h3 class="subsubtitle method-title">getObjectInfo:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns object information corresponding to specified object handle.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (PtpIpObjectInfo *)getObjectInfo:(NSInteger)<em>objectHandle</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>objectHandle</em></dt>
+			<dd><p>Object handle</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Object information</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns object information corresponding to specified object handle.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getRationalPropValue:" title="getRationalPropValue:"></a>
+	<h3 class="subsubtitle method-title">getRationalPropValue:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Acquire property value (RATIONAL format Exif2.3 standard)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (PtpIpRational)getRationalPropValue:(PTP_DEVICE_PROP_CODE)<em>devicePropCode</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>devicePropCode</em></dt>
+			<dd><p>Property Code</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Property value</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Acquire property value (RATIONAL format Exif2.3 standard)</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getRecordingTime" title="getRecordingTime"></a>
+	<h3 class="subsubtitle method-title">getRecordingTime</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Acquires video recording time (seconds). (RICOH THETA m15)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSUInteger)getRecordingTime</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Video recording time (seconds)</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Acquires video recording time (seconds). (RICOH THETA m15)</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getRemainingRecordingTime" title="getRemainingRecordingTime"></a>
+	<h3 class="subsubtitle method-title">getRemainingRecordingTime</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Acquires available video shooting time (seconds). (RICOH THETA m15)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSUInteger)getRemainingRecordingTime</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Available video shooting time (seconds)</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Acquires available video shooting time (seconds). (RICOH THETA m15)</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getResizedImageObject:width:height:onStartData:onChunkReceived:" title="getResizedImageObject:width:height:onStartData:onChunkReceived:"></a>
+	<h3 class="subsubtitle method-title">getResizedImageObject:width:height:onStartData:onChunkReceived:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Acquires object corresponding to specified object handle, resized to 2048x1024 pixels.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)getResizedImageObject:(NSInteger)<em>objectHandle</em> width:(NSInteger)<em>width</em> height:(NSInteger)<em>height</em> onStartData:(void ( ^ ) ( NSUInteger totalLength ))<em>startBlock</em> onChunkReceived:(BOOL ( ^ ) ( NSData *data ))<em>block</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>objectHandle</em></dt>
+			<dd><p>Object handle</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>width</em></dt>
+			<dd><p>Width</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>height</em></dt>
+			<dd><p>Height</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>startBlock</em></dt>
+			<dd><p>Start information acquisition block</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>Partial data acquisition block</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Successful/failed</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Acquires object corresponding to specified object handle, resized to 2048x1024 pixels.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getShutterSpeed" title="getShutterSpeed"></a>
+	<h3 class="subsubtitle method-title">getShutterSpeed</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Acquires shutter speed. <br>
+The data type is the same as the Exif 2.3 standard rational type. For example, (1, 8000) is 1/8000 of a second.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (PtpIpRational)getShutterSpeed</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Shutter speed</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Acquires shutter speed. <br>
+The data type is the same as the Exif 2.3 standard rational type. For example, (1, 8000) is 1/8000 of a second.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getSleepDelay" title="getSleepDelay"></a>
+	<h3 class="subsubtitle method-title">getSleepDelay</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Acquires the sleep mode (seconds) of the camera. <br>
+Sleep mode is not activated if 0 is set</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSUInteger)getSleepDelay</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Camera sleep mode (seconds)</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Acquires the sleep mode (seconds) of the camera. <br>
+Sleep mode is not activated if 0 is set</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getStillCaptureMode" title="getStillCaptureMode"></a>
+	<h3 class="subsubtitle method-title">getStillCaptureMode</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Acquires shooting mode.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSInteger)getStillCaptureMode</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Shooting mode</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Acquires shooting mode.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getStorageIDs" title="getStorageIDs"></a>
+	<h3 class="subsubtitle method-title">getStorageIDs</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns list of currently valid storage IDs.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)getStorageIDs</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Storage ID list</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns list of currently valid storage IDs.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getStorageInfo" title="getStorageInfo"></a>
+	<h3 class="subsubtitle method-title">getStorageInfo</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns storage information.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (PtpIpStorageInfo *)getStorageInfo</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Storage information</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns storage information.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getStringPropValue:" title="getStringPropValue:"></a>
+	<h3 class="subsubtitle method-title">getStringPropValue:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Acquire property value (String format)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)getStringPropValue:(PTP_DEVICE_PROP_CODE)<em>devicePropCode</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>devicePropCode</em></dt>
+			<dd><p>Property Code</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Property value</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Acquire property value (String format)</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getThumb:" title="getThumb:"></a>
+	<h3 class="subsubtitle method-title">getThumb:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns thumbnail in specified object handle.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (PtpIpObjectContainer *)getThumb:(NSInteger)<em>objectHandle</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>objectHandle</em></dt>
+			<dd><p>Object handle</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Thumbnail</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns thumbnail in specified object handle.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getTimelapseInterval" title="getTimelapseInterval"></a>
+	<h3 class="subsubtitle method-title">getTimelapseInterval</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Acquires shooting interval for interval shooting.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSInteger)getTimelapseInterval</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Shooting interval for interval shooting (milliseconds)</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Acquires shooting interval for interval shooting.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getTimelapseNumber" title="getTimelapseNumber"></a>
+	<h3 class="subsubtitle method-title">getTimelapseNumber</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Acquires maximum number of shots for interval shooting.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSInteger)getTimelapseNumber</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Maximum number of shots</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Acquires maximum number of shots for interval shooting.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getUint16PropValue:" title="getUint16PropValue:"></a>
+	<h3 class="subsubtitle method-title">getUint16PropValue:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Acquire property value (Uint16 format)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSUInteger)getUint16PropValue:(PTP_DEVICE_PROP_CODE)<em>devicePropCode</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>devicePropCode</em></dt>
+			<dd><p>Property Code</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Property value</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Acquire property value (Uint16 format)</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getUint32PropValue:" title="getUint32PropValue:"></a>
+	<h3 class="subsubtitle method-title">getUint32PropValue:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Acquire property value (Uint32 format)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSUInteger)getUint32PropValue:(PTP_DEVICE_PROP_CODE)<em>devicePropCode</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>devicePropCode</em></dt>
+			<dd><p>Property Code</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Property value</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Acquire property value (Uint32 format)</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getUint8PropValue:" title="getUint8PropValue:"></a>
+	<h3 class="subsubtitle method-title">getUint8PropValue:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Acquire property value (Uint8 format)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSUInteger)getUint8PropValue:(PTP_DEVICE_PROP_CODE)<em>devicePropCode</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>devicePropCode</em></dt>
+			<dd><p>Property Code</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Property value</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Acquire property value (Uint8 format)</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getWhiteBalance" title="getWhiteBalance"></a>
+	<h3 class="subsubtitle method-title">getWhiteBalance</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Acquires white balance.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSInteger)getWhiteBalance</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>White balance</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Acquires white balance.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initiateCapture" title="initiateCapture"></a>
+	<h3 class="subsubtitle method-title">initiateCapture</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Shoots a still image.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)initiateCapture</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Successful/failed</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Shoots a still image.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initiateOpenCapture" title="initiateOpenCapture"></a>
+	<h3 class="subsubtitle method-title">initiateOpenCapture</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Starts continuous shooting. Video (RICOH THETA m15) and interval.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSInteger)initiateOpenCapture</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Transaction ID</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Starts continuous shooting. Video (RICOH THETA m15) and interval.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setAudioVolume:" title="setAudioVolume:"></a>
+	<h3 class="subsubtitle method-title">setAudioVolume:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets shutter sound volume.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)setAudioVolume:(NSUInteger)<em>value</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>Shutter sound volume (%)</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Successful/failed</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets shutter sound volume.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setAutoPowerOffDelay:" title="setAutoPowerOffDelay:"></a>
+	<h3 class="subsubtitle method-title">setAutoPowerOffDelay:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the auto power off setting of the camera (minutes). <br>
+Auto power off is not set if 0 is set.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)setAutoPowerOffDelay:(NSUInteger)<em>value</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>Camera auto power off (minutes)</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Successful/failed</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets the auto power off setting of the camera (minutes). <br>
+Auto power off is not set if 0 is set.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setChannelNumber:" title="setChannelNumber:"></a>
+	<h3 class="subsubtitle method-title">setChannelNumber:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets wireless LAN channel. <br>
+Reflected when the Wi-Fi is turned OFF/ON. <br>
+Random operation occurs if 0 is set.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)setChannelNumber:(NSUInteger)<em>value</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>Wireless LAN channel</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Successful/failed</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets wireless LAN channel. <br>
+Reflected when the Wi-Fi is turned OFF/ON. <br>
+Random operation occurs if 0 is set.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setDateTime:" title="setDateTime:"></a>
+	<h3 class="subsubtitle method-title">setDateTime:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets date and time.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)setDateTime:(NSDate *)<em>value</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>Date and time</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Successful/failed</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets date and time.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setExposureBiasCompensation:" title="setExposureBiasCompensation:"></a>
+	<h3 class="subsubtitle method-title">setExposureBiasCompensation:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets exposure correction value.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)setExposureBiasCompensation:(NSInteger)<em>value</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>Exposure compensation value</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Successful/failed</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets exposure correction value.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setExposureIndex:" title="setExposureIndex:"></a>
+	<h3 class="subsubtitle method-title">setExposureIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets ISO sensitivity.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)setExposureIndex:(NSInteger)<em>value</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>ISO sensitivity</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Successful/failed</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets ISO sensitivity.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setGPSInfo:" title="setGPSInfo:"></a>
+	<h3 class="subsubtitle method-title">setGPSInfo:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets GPS information.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)setGPSInfo:(NSString *)<em>value</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>GPS information</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Successful/failed</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets GPS information.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setInt16PropValue:value:" title="setInt16PropValue:value:"></a>
+	<h3 class="subsubtitle method-title">setInt16PropValue:value:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Property value settings (Int16 format)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)setInt16PropValue:(PTP_DEVICE_PROP_CODE)<em>devicePropCode</em> value:(NSInteger)<em>value</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>devicePropCode</em></dt>
+			<dd><p>Property Code</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>Property value</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Successful/failed</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Property value settings (Int16 format)</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setInt32PropValue:value:" title="setInt32PropValue:value:"></a>
+	<h3 class="subsubtitle method-title">setInt32PropValue:value:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Property value settings (Int32 format)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)setInt32PropValue:(PTP_DEVICE_PROP_CODE)<em>devicePropCode</em> value:(NSInteger)<em>value</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>devicePropCode</em></dt>
+			<dd><p>Property Code</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>Property value</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Successful/failed</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Property value settings (Int32 format)</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setInt8PropValue:value:" title="setInt8PropValue:value:"></a>
+	<h3 class="subsubtitle method-title">setInt8PropValue:value:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Property value settings (Int8 format)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)setInt8PropValue:(PTP_DEVICE_PROP_CODE)<em>devicePropCode</em> value:(NSInteger)<em>value</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>devicePropCode</em></dt>
+			<dd><p>Property Code</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>Property value</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Successful/failed</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Property value settings (Int8 format)</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setRationalPropValue:value:" title="setRationalPropValue:value:"></a>
+	<h3 class="subsubtitle method-title">setRationalPropValue:value:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Property value settings (RATIONAL format Exif2.3 standard)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)setRationalPropValue:(PTP_DEVICE_PROP_CODE)<em>devicePropCode</em> value:(PtpIpRational)<em>value</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>devicePropCode</em></dt>
+			<dd><p>Property Code</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>Property value</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Successful/failed</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Property value settings (RATIONAL format Exif2.3 standard)</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setShutterSpeed:" title="setShutterSpeed:"></a>
+	<h3 class="subsubtitle method-title">setShutterSpeed:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets shutter speed. <br>
+The data type is the same as the Exif 2.3 standard rational type. For example, (1, 8000) is 1/8000 of a second.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)setShutterSpeed:(PtpIpRational)<em>value</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>Shutter speed</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Successful/failed</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets shutter speed. <br>
+The data type is the same as the Exif 2.3 standard rational type. For example, (1, 8000) is 1/8000 of a second.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setSleepDelay:" title="setSleepDelay:"></a>
+	<h3 class="subsubtitle method-title">setSleepDelay:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the sleep mode (seconds) of the camera. <br>
+Sleep mode is not activated if 0 is set</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)setSleepDelay:(NSUInteger)<em>value</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>Camera sleep mode (seconds)</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Successful/failed</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets the sleep mode (seconds) of the camera. <br>
+Sleep mode is not activated if 0 is set</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setStillCaptureMode:" title="setStillCaptureMode:"></a>
+	<h3 class="subsubtitle method-title">setStillCaptureMode:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the shooting mode.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)setStillCaptureMode:(NSInteger)<em>value</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>Shooting mode</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Successful/failed</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets the shooting mode.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setStringPropValue:value:" title="setStringPropValue:value:"></a>
+	<h3 class="subsubtitle method-title">setStringPropValue:value:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Property value settings (String format)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)setStringPropValue:(PTP_DEVICE_PROP_CODE)<em>devicePropCode</em> value:(NSString *)<em>value</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>devicePropCode</em></dt>
+			<dd><p>Property Code</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>Property value</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Successful/failed</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Property value settings (String format)</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setTimelapseInterval:" title="setTimelapseInterval:"></a>
+	<h3 class="subsubtitle method-title">setTimelapseInterval:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets shooting interval for interval shooting.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)setTimelapseInterval:(NSInteger)<em>value</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>Shooting interval for interval shooting (milliseconds)</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Successful/failed</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets shooting interval for interval shooting.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setTimelapseNumber:" title="setTimelapseNumber:"></a>
+	<h3 class="subsubtitle method-title">setTimelapseNumber:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets maximum number of shots for interval shooting.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)setTimelapseNumber:(NSInteger)<em>value</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>Maximum number of shots</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Successful/failed</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets maximum number of shots for interval shooting.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setUint16PropValue:value:" title="setUint16PropValue:value:"></a>
+	<h3 class="subsubtitle method-title">setUint16PropValue:value:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Property value settings (Uint16 format)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)setUint16PropValue:(PTP_DEVICE_PROP_CODE)<em>devicePropCode</em> value:(NSUInteger)<em>value</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>devicePropCode</em></dt>
+			<dd><p>Property Code</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>Property value</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Successful/failed</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Property value settings (Uint16 format)</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setUint32PropValue:value:" title="setUint32PropValue:value:"></a>
+	<h3 class="subsubtitle method-title">setUint32PropValue:value:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Property value settings (Uint32 format)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)setUint32PropValue:(PTP_DEVICE_PROP_CODE)<em>devicePropCode</em> value:(NSUInteger)<em>value</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>devicePropCode</em></dt>
+			<dd><p>Property Code</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>Property value</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Successful/failed</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Property value settings (Uint32 format)</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setUint8PropValue:value:" title="setUint8PropValue:value:"></a>
+	<h3 class="subsubtitle method-title">setUint8PropValue:value:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Property value settings (Uint8 format)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)setUint8PropValue:(PTP_DEVICE_PROP_CODE)<em>devicePropCode</em> value:(NSUInteger)<em>value</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>devicePropCode</em></dt>
+			<dd><p>Property Code</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>Property value</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Successful/failed</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Property value settings (Uint8 format)</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setWhiteBalance:" title="setWhiteBalance:"></a>
+	<h3 class="subsubtitle method-title">setWhiteBalance:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets white balance.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)setWhiteBalance:(NSInteger)<em>value</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>White balance</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Successful/failed</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets white balance.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/terminateOpenCapture:" title="terminateOpenCapture:"></a>
+	<h3 class="subsubtitle method-title">terminateOpenCapture:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Ends continuous shooting.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)terminateOpenCapture:(NSInteger)<em>tid</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>tid</em></dt>
+			<dd><p>Transaction ID</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Successful/failed</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Ends continuous shooting.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/wlanPowerControl" title="wlanPowerControl"></a>
+	<h3 class="subsubtitle method-title">wlanPowerControl</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Turns Wi-Fi OFF.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)wlanPowerControl</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Successful/failed</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Turns Wi-Fi OFF.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PtpIpSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+                    
+                    
+
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2014 Ricoh Company, Ltd. All rights reserved. (Last updated: 2014-11-10)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>
