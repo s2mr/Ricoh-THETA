@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		201AAC1F1D53988D00967956 /* TakePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201AAC1E1D53988D00967956 /* TakePhotoViewController.swift */; };
+		2027F4FE1D539E1F00DDAFB8 /* Bridging-Header.h in Resources */ = {isa = PBXBuildFile; fileRef = 202C8E5D1D52505500A551B2 /* Bridging-Header.h */; };
 		202C8E5C1D524F9F00A551B2 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 202C8E5B1D524F9F00A551B2 /* libiconv.tbd */; };
 		205404F71D5243790030AE21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205404F61D5243790030AE21 /* AppDelegate.swift */; };
 		205404F91D5243790030AE21 /* ConnectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205404F81D5243790030AE21 /* ConnectViewController.swift */; };
@@ -450,6 +451,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2027F4FE1D539E1F00DDAFB8 /* Bridging-Header.h in Resources */,
 				2054057F1D52441A0030AE21 /* README in Resources */,
 				205405011D5243790030AE21 /* LaunchScreen.storyboard in Resources */,
 				205405681D52441A0030AE21 /* PtpIpDeviceInfo.html in Resources */,
