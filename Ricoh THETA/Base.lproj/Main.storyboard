@@ -26,7 +26,7 @@
         <!--撮影準備-->
         <scene sceneID="BW3-7R-L2N">
             <objects>
-                <viewController id="dLa-o4-Zn3" customClass="TakePhotoViewController" customModule="Ricoh_THETA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="dLa-o4-Zn3" customClass="TakePhoto1ViewController" customModule="Ricoh_THETA" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PEd-fr-Arf"/>
                         <viewControllerLayoutGuide type="bottom" id="bdu-cR-ZTr"/>
@@ -35,14 +35,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yux-xf-CtD">
-                                <rect key="frame" x="90" y="315" width="141" height="81"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                <state key="normal" title="撮影開始"/>
-                                <connections>
-                                    <segue destination="CS7-Kj-uiZ" kind="show" id="dTP-sn-ICK"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="インターバル間隔" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="deS-kU-4gb">
                                 <rect key="frame" x="13" y="118" width="136" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -54,6 +46,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yux-xf-CtD">
+                                <rect key="frame" x="90" y="263" width="141" height="81"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <state key="normal" title="撮影開始"/>
+                                <connections>
+                                    <segue destination="CS7-Kj-uiZ" kind="show" id="dTP-sn-ICK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -68,7 +68,7 @@
         <!--撮影中-->
         <scene sceneID="tH9-ng-HOI">
             <objects>
-                <viewController id="CS7-Kj-uiZ" sceneMemberID="viewController">
+                <viewController id="CS7-Kj-uiZ" customClass="TakePhoto2ViewController" customModule="Ricoh_THETA" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AQE-0c-XcB"/>
                         <viewControllerLayoutGuide type="bottom" id="iD9-AT-pgG"/>
@@ -116,7 +116,7 @@
         <!--転送中-->
         <scene sceneID="1nd-fK-clx">
             <objects>
-                <viewController id="6fw-q1-Tuy" sceneMemberID="viewController">
+                <viewController id="6fw-q1-Tuy" customClass="TakePhoto3ViewController" customModule="Ricoh_THETA" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yKE-RT-THX"/>
                         <viewControllerLayoutGuide type="bottom" id="P9M-I3-jhP"/>
@@ -172,7 +172,7 @@
         <!--画像選択-->
         <scene sceneID="jRI-Ng-Ysq">
             <objects>
-                <viewController id="Jej-8e-FN3" sceneMemberID="viewController">
+                <viewController id="Jej-8e-FN3" customClass="TakePhoto4ViewController" customModule="Ricoh_THETA" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VgY-AR-Hh5"/>
                         <viewControllerLayoutGuide type="bottom" id="3Tb-Mx-Qxm"/>
@@ -207,7 +207,7 @@
         <!--最終調整-->
         <scene sceneID="l35-zU-ZYn">
             <objects>
-                <viewController id="y96-1I-y3a" sceneMemberID="viewController">
+                <viewController id="y96-1I-y3a" customClass="TakePhoto5ViewController" customModule="Ricoh_THETA" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JcQ-0r-Lvl"/>
                         <viewControllerLayoutGuide type="bottom" id="zUd-gM-oGf"/>
@@ -275,10 +275,10 @@
             </objects>
             <point key="canvasLocation" x="2038" y="-97"/>
         </scene>
-        <!--View Controller-->
+        <!--Take Photo6 View Controller-->
         <scene sceneID="KgK-uP-5je">
             <objects>
-                <viewController id="5VS-rp-kuw" sceneMemberID="viewController">
+                <viewController id="5VS-rp-kuw" customClass="TakePhoto6ViewController" customModule="Ricoh_THETA" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Yy8-E0-Ybr"/>
                         <viewControllerLayoutGuide type="bottom" id="hu5-yu-Nkf"/>
@@ -350,7 +350,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未接続" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mRh-5k-38K">
                                 <rect key="frame" x="97" y="101" width="126" height="82"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
-                                <color key="textColor" red="0.0" green="0.56558893202857075" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="0.10000000000000001" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="接続完了" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s8Q-H7-UKK">
@@ -359,7 +359,7 @@
                                     <constraint firstAttribute="height" constant="64" id="p3t-Q2-dAH"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
-                                <color key="textColor" red="0.0" green="0.56558893202857075" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="0.10000000000000001" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -374,6 +374,10 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="接続" id="48j-MJ-Qtu"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="connectedLabel" destination="s8Q-H7-UKK" id="nTh-H7-0bW"/>
+                        <outlet property="notConnectedLabel" destination="mRh-5k-38K" id="qzB-bY-xl7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eEY-cq-liX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

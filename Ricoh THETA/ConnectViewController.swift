@@ -13,6 +13,8 @@ class ConnectViewController: UIViewController{
     var ptpConnection :PtpConnection!
     var session :PtpIpSession!
     
+    @IBOutlet weak var notConnectedLabel: UILabel!
+    @IBOutlet weak var connectedLabel: UILabel!
     
     
     override func viewDidLoad() {
@@ -23,8 +25,18 @@ class ConnectViewController: UIViewController{
         func a(connected:Bool) {
             if connected {
                 print("接続完了")
+                
+                //UI処理のためメインスレッドで実行
+                dispatch_async(dispatch_get_main_queue(), {
+                    self.connectedLabel.textColor = UIColor.blueColor()
+                })
+                
             } else {
                 print("接続失敗")
+                dispatch_async(dispatch_get_main_queue(), {
+                    self.notConnectedLabel.textColor = UIColor.blueColor()
+                })
+            
             }
         }
         

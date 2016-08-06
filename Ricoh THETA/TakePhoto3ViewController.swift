@@ -1,5 +1,5 @@
 //
-//  ConnectViewController.swift
+//  TakePhoto3ViewController.swift
 //  Ricoh THETA
 //
 //  Created by 下村一将 on 2016/08/05.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TakePhotoViewController: UIViewController {
+class TakePhoto3ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

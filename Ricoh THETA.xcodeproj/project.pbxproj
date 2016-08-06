@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		201AAC1F1D53988D00967956 /* TakePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201AAC1E1D53988D00967956 /* TakePhotoViewController.swift */; };
+		201AAC1F1D53988D00967956 /* TakePhoto1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201AAC1E1D53988D00967956 /* TakePhoto1ViewController.swift */; };
 		2027F4FE1D539E1F00DDAFB8 /* Bridging-Header.h in Resources */ = {isa = PBXBuildFile; fileRef = 202C8E5D1D52505500A551B2 /* Bridging-Header.h */; };
+		2027F5011D5453F500DDAFB8 /* TakePhoto2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2027F5001D5453F500DDAFB8 /* TakePhoto2ViewController.swift */; };
+		2027F5031D54541800DDAFB8 /* TakePhoto3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2027F5021D54541800DDAFB8 /* TakePhoto3ViewController.swift */; };
+		2027F5051D54542D00DDAFB8 /* TakePhoto4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2027F5041D54542D00DDAFB8 /* TakePhoto4ViewController.swift */; };
+		2027F5071D54544900DDAFB8 /* TakePhoto5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2027F5061D54544900DDAFB8 /* TakePhoto5ViewController.swift */; };
+		2027F5091D5454B800DDAFB8 /* TakePhoto6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2027F5081D5454B800DDAFB8 /* TakePhoto6ViewController.swift */; };
 		202C8E5C1D524F9F00A551B2 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 202C8E5B1D524F9F00A551B2 /* libiconv.tbd */; };
 		205404F71D5243790030AE21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205404F61D5243790030AE21 /* AppDelegate.swift */; };
 		205404F91D5243790030AE21 /* ConnectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205404F81D5243790030AE21 /* ConnectViewController.swift */; };
@@ -72,7 +77,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		201AAC1E1D53988D00967956 /* TakePhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakePhotoViewController.swift; sourceTree = "<group>"; };
+		201AAC1E1D53988D00967956 /* TakePhoto1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakePhoto1ViewController.swift; sourceTree = "<group>"; };
+		2027F5001D5453F500DDAFB8 /* TakePhoto2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakePhoto2ViewController.swift; sourceTree = "<group>"; };
+		2027F5021D54541800DDAFB8 /* TakePhoto3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakePhoto3ViewController.swift; sourceTree = "<group>"; };
+		2027F5041D54542D00DDAFB8 /* TakePhoto4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakePhoto4ViewController.swift; sourceTree = "<group>"; };
+		2027F5061D54544900DDAFB8 /* TakePhoto5ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakePhoto5ViewController.swift; sourceTree = "<group>"; };
+		2027F5081D5454B800DDAFB8 /* TakePhoto6ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakePhoto6ViewController.swift; sourceTree = "<group>"; };
 		202C8E5B1D524F9F00A551B2 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		202C8E5D1D52505500A551B2 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		205404F31D5243790030AE21 /* Ricoh THETA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ricoh THETA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -181,6 +191,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2027F4FF1D54535300DDAFB8 /* Photographing */ = {
+			isa = PBXGroup;
+			children = (
+				201AAC1E1D53988D00967956 /* TakePhoto1ViewController.swift */,
+				2027F5001D5453F500DDAFB8 /* TakePhoto2ViewController.swift */,
+				2027F5021D54541800DDAFB8 /* TakePhoto3ViewController.swift */,
+				2027F5041D54542D00DDAFB8 /* TakePhoto4ViewController.swift */,
+				2027F5061D54544900DDAFB8 /* TakePhoto5ViewController.swift */,
+				2027F5081D5454B800DDAFB8 /* TakePhoto6ViewController.swift */,
+			);
+			name = Photographing;
+			sourceTree = "<group>";
+		};
 		205404EA1D5243790030AE21 = {
 			isa = PBXGroup;
 			children = (
@@ -203,6 +226,7 @@
 		205404F51D5243790030AE21 /* Ricoh THETA */ = {
 			isa = PBXGroup;
 			children = (
+				2027F4FF1D54535300DDAFB8 /* Photographing */,
 				202C8E5D1D52505500A551B2 /* Bridging-Header.h */,
 				205404F61D5243790030AE21 /* AppDelegate.swift */,
 				205404F81D5243790030AE21 /* ConnectViewController.swift */,
@@ -210,7 +234,6 @@
 				205404FD1D5243790030AE21 /* Assets.xcassets */,
 				205404FF1D5243790030AE21 /* LaunchScreen.storyboard */,
 				205405021D5243790030AE21 /* Info.plist */,
-				201AAC1E1D53988D00967956 /* TakePhotoViewController.swift */,
 			);
 			path = "Ricoh THETA";
 			sourceTree = "<group>";
@@ -491,6 +514,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				205405911D52441A0030AE21 /* PtpIpObjectContainer.mm in Sources */,
+				2027F5031D54541800DDAFB8 /* TakePhoto3ViewController.swift in Sources */,
 				205405861D52441A0030AE21 /* bytestream.cpp in Sources */,
 				205405981D52441A0030AE21 /* PtpConnection.m in Sources */,
 				205405841D52441A0030AE21 /* basictypes.cpp in Sources */,
@@ -501,6 +525,8 @@
 				205405811D52441A0030AE21 /* LibLogging.mm in Sources */,
 				205404F91D5243790030AE21 /* ConnectViewController.swift in Sources */,
 				205405851D52441A0030AE21 /* bufferedsock.cpp in Sources */,
+				2027F5071D54544900DDAFB8 /* TakePhoto5ViewController.swift in Sources */,
+				2027F5091D5454B800DDAFB8 /* TakePhoto6ViewController.swift in Sources */,
 				2054058F1D52441A0030AE21 /* PtpIpDevicePropDesc.mm in Sources */,
 				205405831D52441A0030AE21 /* ObjcLogger.mm in Sources */,
 				205405961D52441A0030AE21 /* variant.cpp in Sources */,
@@ -508,13 +534,15 @@
 				205405991D52441A0030AE21 /* PtpLogging.mm in Sources */,
 				205405931D52441A0030AE21 /* PtpIpSession+dcf.mm in Sources */,
 				2054058A1D52441A0030AE21 /* ptpip.cpp in Sources */,
-				201AAC1F1D53988D00967956 /* TakePhotoViewController.swift in Sources */,
+				201AAC1F1D53988D00967956 /* TakePhoto1ViewController.swift in Sources */,
 				2054057D1D52441A0030AE21 /* ExifRawData.mm in Sources */,
 				2054058D1D52441A0030AE21 /* ptpip_packets_impl.cpp in Sources */,
 				205405881D52441A0030AE21 /* int128_t.cpp in Sources */,
 				205405951D52441A0030AE21 /* PtpIpStorageInfo.mm in Sources */,
 				205405821D52441A0030AE21 /* logger.cpp in Sources */,
+				2027F5051D54542D00DDAFB8 /* TakePhoto4ViewController.swift in Sources */,
 				2054058C1D52441A0030AE21 /* ptpip_packets.cpp in Sources */,
+				2027F5011D5453F500DDAFB8 /* TakePhoto2ViewController.swift in Sources */,
 				205405941D52441A0030AE21 /* PtpIpSession.mm in Sources */,
 				205405871D52441A0030AE21 /* exceptions.cpp in Sources */,
 				205405801D52441A0030AE21 /* RicohEXIF.mm in Sources */,
