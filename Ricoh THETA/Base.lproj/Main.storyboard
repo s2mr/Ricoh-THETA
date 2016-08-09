@@ -51,6 +51,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <state key="normal" title="撮影開始"/>
                                 <connections>
+                                    <action selector="startButtonPushed:" destination="dLa-o4-Zn3" eventType="touchUpInside" id="aVu-V6-D2q"/>
                                     <segue destination="CS7-Kj-uiZ" kind="show" id="dTP-sn-ICK"/>
                                 </connections>
                             </button>
@@ -60,6 +61,9 @@
                     <tabBarItem key="tabBarItem" title="撮影" id="M1I-FX-p30"/>
                     <navigationItem key="navigationItem" title="撮影準備" id="hFL-r2-MCM"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="intervalLabel" destination="oLI-VB-gam" id="Izg-ye-tzq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CSU-vG-Fuz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -100,6 +104,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <state key="normal" title="撮影終了"/>
                                 <connections>
+                                    <action selector="stopButtonPushed:" destination="CS7-Kj-uiZ" eventType="touchUpInside" id="d3E-ls-t01"/>
                                     <segue destination="6fw-q1-Tuy" kind="show" id="JxR-O5-OaD"/>
                                 </connections>
                             </button>
@@ -164,6 +169,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="転送中" id="qcn-50-eVE"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="progressView" destination="lRA-jU-lWI" id="HsI-df-ecz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z6a-3R-bJm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -344,17 +352,17 @@
                         <viewControllerLayoutGuide type="bottom" id="GxW-IX-anm"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="uvb-8X-g5p">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未接続" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mRh-5k-38K">
-                                <rect key="frame" x="97" y="101" width="126" height="82"/>
+                                <rect key="frame" x="125" y="101" width="126" height="269"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
                                 <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="0.10000000000000001" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="接続完了" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s8Q-H7-UKK">
-                                <rect key="frame" x="76" y="197" width="168" height="64"/>
+                                <rect key="frame" x="104" y="384" width="168" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="p3t-Q2-dAH"/>
                                 </constraints>
@@ -362,6 +370,16 @@
                                 <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="0.10000000000000001" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="バッテリーレベル：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eKB-bS-nSC">
+                                <rect key="frame" x="20" y="493" width="255" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IQf-qv-Aeu">
+                                <rect key="frame" x="199" y="467" width="156" height="138"/>
+                                <color key="backgroundColor" red="0.86504600249999997" green="0.0029928540650375575" blue="0.10244254058508598" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -373,15 +391,17 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="接続" id="48j-MJ-Qtu"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="batteryLevelLabel" destination="eKB-bS-nSC" id="S9Q-Tb-aXQ"/>
                         <outlet property="connectedLabel" destination="s8Q-H7-UKK" id="nTh-H7-0bW"/>
+                        <outlet property="imageView" destination="IQf-qv-Aeu" id="SSD-8K-05h"/>
                         <outlet property="notConnectedLabel" destination="mRh-5k-38K" id="qzB-bY-xl7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eEY-cq-liX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-177" y="-671"/>
+            <point key="canvasLocation" x="-168.5" y="-711.5"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="doi-jU-as2">

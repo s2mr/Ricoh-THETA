@@ -10,9 +10,18 @@ import UIKit
 
 class TakePhoto3ViewController: UIViewController {
 
+    let ad = UIApplication.sharedApplication().delegate as! AppDelegate
+    
+    @IBOutlet weak var progressView: UIProgressView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        func a(session:PtpIpSession) {
+//            session.getObject(<#T##objectHandle: Int##Int#>)
+        }
+        
+//        ad.ptpConnection.operateSession(<#T##block: ((PtpIpSession!) -> Void)!##((PtpIpSession!) -> Void)!##(PtpIpSession!) -> Void#>)
         // Do any additional setup after loading the view.
     }
 

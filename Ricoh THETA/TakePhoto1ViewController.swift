@@ -9,6 +9,10 @@
 import UIKit
 
 class TakePhoto1ViewController: UIViewController {
+    
+    let ad = UIApplication.sharedApplication().delegate as! AppDelegate
+    
+    @IBOutlet weak var intervalLabel: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +24,18 @@ class TakePhoto1ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func startButtonPushed(sender: AnyObject) {
+        func a(session:PtpIpSession!) {
+            session.setTimelapseInterval(Int(intervalLabel.text!)! * 1000)
+            session.setStillCaptureMode(0x0003)
+            session.initiateOpenCapture()
+        }
+        
+        ad.ptpConnection.operateSession(a)
+    
+    }
+    
     
 
     /*

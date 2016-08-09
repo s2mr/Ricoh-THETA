@@ -10,6 +10,8 @@ import UIKit
 
 class TakePhoto2ViewController: UIViewController {
 
+    let ad = UIApplication.sharedApplication().delegate as! AppDelegate
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,6 +22,20 @@ class TakePhoto2ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func stopButtonPushed(sender: AnyObject) {
+        
+        func a(session:PtpIpSession!) {
+            session.terminateOpenCapture(0xFFFFFFFF)
+        }
+        
+        ad.ptpConnection.operateSession(a)
+        
+//        ad.ptpConnection.operateSession(<#T##block: ((PtpIpSession!) -> Void)!##((PtpIpSession!) -> Void)!##(PtpIpSession!) -> Void#>)
+    }
+    
+    
+    
     
 
     /*
