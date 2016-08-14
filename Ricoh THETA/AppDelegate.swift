@@ -13,6 +13,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var ptpConnection :PtpConnection!
+    
+    var receivedHandler = [Int]()
+    var receivedData = [NSData]()
+    var receivedInfo = [PtpIpObjectInfo]()
+    
+    func load(key:String) {
+        let ud = NSUserDefaults()
+        let object = ud.objectForKey(key)
+        if object != nil {
+            if key == "receivedData" {
+                self.receivedData = object as! [NSData]
+            }else if key == "receivedHandler" {
+                self.receivedHandler = object as! [Int]
+            }else if key == "receivedInfo" {
+                self.receivedInfo = object as! [PtpIpObjectInfo]
+            }
+        }
+        
+    }
+    
+    func save(object: AnyObject, key: String) {
+        let ud = NSUserDefaults()
+        ud.setObject(object, forKey: key)
+    }
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {

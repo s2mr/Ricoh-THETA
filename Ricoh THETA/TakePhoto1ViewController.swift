@@ -16,7 +16,6 @@ class TakePhoto1ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 
@@ -27,9 +26,9 @@ class TakePhoto1ViewController: UIViewController {
     
     @IBAction func startButtonPushed(sender: AnyObject) {
         func a(session:PtpIpSession!) {
-            session.setTimelapseInterval(Int(intervalLabel.text!)! * 1000)
-            session.setStillCaptureMode(0x0003)
-            session.initiateOpenCapture()
+//            session.setTimelapseInterval(Int(intervalLabel.text!)! * 1000)
+//            session.setStillCaptureMode(0x0003)
+//            session.initiateOpenCapture()
         }
         
         ad.ptpConnection.operateSession(a)

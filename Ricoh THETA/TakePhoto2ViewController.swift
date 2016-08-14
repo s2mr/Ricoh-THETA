@@ -26,12 +26,11 @@ class TakePhoto2ViewController: UIViewController {
     @IBAction func stopButtonPushed(sender: AnyObject) {
         
         func a(session:PtpIpSession!) {
-            session.terminateOpenCapture(0xFFFFFFFF)
+//            session.terminateOpenCapture(0xFFFFFFFF)
         }
         
         ad.ptpConnection.operateSession(a)
         
-//        ad.ptpConnection.operateSession(<#T##block: ((PtpIpSession!) -> Void)!##((PtpIpSession!) -> Void)!##(PtpIpSession!) -> Void#>)
     }
     
     
