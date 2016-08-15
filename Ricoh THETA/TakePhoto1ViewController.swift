@@ -8,11 +8,14 @@
 
 import UIKit
 
-class TakePhoto1ViewController: UIViewController {
+class TakePhoto1ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     let ad = UIApplication.sharedApplication().delegate as! AppDelegate
+//    @IBOutlet weak var intervalLabel: UITextField!
+    @IBOutlet weak var pickerView: UIPickerView!
     
-    @IBOutlet weak var intervalLabel: UITextField!
+    let pickerArray = [5,10,15]
+    var selectedValue = 5
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,16 +29,28 @@ class TakePhoto1ViewController: UIViewController {
     
     @IBAction func startButtonPushed(sender: AnyObject) {
         func a(session:PtpIpSession!) {
-//            session.setTimelapseInterval(Int(intervalLabel.text!)! * 1000)
+//            session.setTimelapseInterval(selectedValue * 1000)
 //            session.setStillCaptureMode(0x0003)
 //            session.initiateOpenCapture()
         }
-        
         ad.ptpConnection.operateSession(a)
-    
     }
     
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerArray.count
+    }
     
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return pickerArray[row].description
+    }
+    
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        selectedValue = pickerArray[row]
+    }
 
     /*
     // MARK: - Navigation

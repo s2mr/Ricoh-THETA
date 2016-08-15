@@ -12,11 +12,15 @@ class TakePhoto4ViewController: UIViewController, UICollectionViewDelegate, UICo
     
     let ad = UIApplication.sharedApplication().delegate as! AppDelegate
     var views = [UIView]()
+    var checkMark:UIView!
+    var checkArray:NSMutableArray = []
     
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        checkMark = UIView(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
+        checkMark.backgroundColor = UIColor.cyanColor()
         // Do any additional setup after loading the view.
     }
 
@@ -27,21 +31,46 @@ class TakePhoto4ViewController: UIViewController, UICollectionViewDelegate, UICo
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+        views = [UIView]()
         collectionView.reloadData()
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         for _ in 1...ad.receivedData.count {
-        views.append(UIView(frame: CGRect(x: 0,y: 0,width: 30,height: 30)))
+            views.append(UIView(frame: CGRect(x: 0,y: 0,width: 30,height: 30)))
+//            ad.picTags.append(0)
         }
         return ad.receivedData.count
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! CustomCell
+    
+        for subview in cell.contentView.subviews{
+            if subview.tag == 100 {
+                subview.removeFromSuperview()
+            }
+        }
+        
+        
         let img = UIImage(data: ad.receivedData[indexPath.row])
-        cell.tag = 0
         cell.imageView.image = img
+    
+        if checkArray.containsObject(indexPath){
+            let checkImg = UIImage(named: "checkMark")
+            let checkView = UIImageView(frame: CGRect(x: 0, y: 0, width: (checkImg?.size.width)!, height: (checkImg?.size.height)!))
+            checkView.tag = 100
+            checkView.image = checkImg
+            
+            print("セル作成！")
+//            print(indexPath.row)
+            
+//            views[indexPath.row].backgroundColor = UIColor.cyanColor()
+            cell.contentView.addSubview(checkView)
+        }else{
+            print("何も表示しません")
+        }
+        
 //        cell.dateLabel.text = ad.receivedInfo[indexPath.row].capture_date.decription
         return cell
     }
@@ -51,14 +80,23 @@ class TakePhoto4ViewController: UIViewController, UICollectionViewDelegate, UICo
         
         print("セル選択:" + indexPath.row.description)
         //選択状態：１　、非選択状態：０
-        if collectionView.cellForItemAtIndexPath(indexPath)?.tag == 0 {
-            views[indexPath.row].backgroundColor = UIColor.cyanColor()
-            collectionView.cellForItemAtIndexPath(indexPath)?.tag = 1
-            collectionView.cellForItemAtIndexPath(indexPath)?.addSubview(views[indexPath.row])
-        }else {
-            collectionView.cellForItemAtIndexPath(indexPath)?.tag = 0
-            views[indexPath.row].removeFromSuperview()
+//        if ad.picTags[indexPath.row] == 0 {
+//            views[indexPath.row].backgroundColor = UIColor.cyanColor()
+//            ad.picTags[indexPath.row] = 1
+//            collectionView.cellForItemAtIndexPath(indexPath)?.addSubview(views[indexPath.row])
+//        }else {
+//            ad.picTags[indexPath.row] = 0
+//            views[indexPath.row].removeFromSuperview()
+//        }
+        if checkArray.containsObject(indexPath){
+            print("チェックArrayから削除！")
+            checkArray.removeObject(indexPath)
+        }else{
+            print("チェックArrayに追加！")
+            checkArray.addObject(indexPath)
         }
+        collectionView.reloadData()
+        
     }
     
 
@@ -72,13 +110,24 @@ class TakePhoto4ViewController: UIViewController, UICollectionViewDelegate, UICo
         if segue.identifier == "to5"{
             
             //先頭から削除すると要素数が変わるため後ろから削除
-            for i in (0..<ad.receivedData.count).reverse(){
-                let cell = collectionView.cellForItemAtIndexPath(NSIndexPath(forRow: i, inSection: 0))
-                if cell?.tag == 0 {
-                    ad.receivedData.removeAtIndex(i)
-                }
+//            for i in (0..<ad.receivedData.count).reverse(){
+//                print("Cellのタグ: " + ad.picTags[i].description)
+//                if ad.picTags[i] == 0 {
+//                    ad.receivedData.removeAtIndex(i)
+//                }
+//            }
+            
+            //初期化
+            ad.toShowImage.removeAll()
+
+            let sortedArray = checkArray.sort {$0.row < $1.row}
+            
+            for index in sortedArray {
+                ad.toShowImage.append(ad.receivedData[index.row])
             }
+            
             print("receivedDataの個数: " + ad.receivedData.count.description)
+            print("toShowImageの個数: " + ad.toShowImage.count.description)
         }
     }
 }

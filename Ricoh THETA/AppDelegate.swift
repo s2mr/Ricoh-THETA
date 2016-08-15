@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var receivedHandler = [Int]()
     var receivedData = [NSData]()
     var receivedInfo = [PtpIpObjectInfo]()
+    var toShowImage = [NSData]()
     
     func load(key:String) {
         let ud = NSUserDefaults()

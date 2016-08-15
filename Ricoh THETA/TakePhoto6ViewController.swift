@@ -24,7 +24,6 @@ class TakePhoto6ViewController: UIViewController, RPPreviewViewControllerDelegat
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupCamera()
 
         // Do any additional setup after loading the view.
     }
@@ -32,6 +31,11 @@ class TakePhoto6ViewController: UIViewController, RPPreviewViewControllerDelegat
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        setupCamera()
     }
     
     @IBAction func startButtonPushed(sender: AnyObject) {
@@ -114,8 +118,9 @@ class TakePhoto6ViewController: UIViewController, RPPreviewViewControllerDelegat
         let sphereGeometry = SCNSphere(radius: 20)
         let material = SCNMaterial()
         material.doubleSided = true
-        material.diffuse.contents = UIImage(data: ad.receivedData.first!)?.flipHorizontal()
+        material.diffuse.contents = UIImage(data: ad.toShowImage.first!)?.flipHorizontal()
         sphereGeometry.firstMaterial = material
+        
         
 //        var materials = [SCNMaterial]()
 //        for j in 1..<ad.receivedData.count {

@@ -11,6 +11,7 @@ import UIKit
 class TakePhoto2ViewController: UIViewController {
 
     let ad = UIApplication.sharedApplication().delegate as! AppDelegate
+    var interbal:Int!
     
     override func viewDidLoad() {
         super.viewDidLoad()

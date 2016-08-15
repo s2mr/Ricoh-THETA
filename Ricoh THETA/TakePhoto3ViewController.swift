@@ -74,7 +74,7 @@ class TakePhoto3ViewController: UIViewController {
             let handle = handle as! Int
             
             //受信済みハンドラーにhandleが含まれていない場合に取得、受信
-//            if !ad.receivedHandler.contains(handle) {
+            if !ad.receivedHandler.contains(handle) {
             
                 let objectInfo = session.getObjectInfo(handle)
                 //JPEGの場合
@@ -93,7 +93,7 @@ class TakePhoto3ViewController: UIViewController {
                     
                     receivedData = NSMutableData()
                 }
-//            }
+            }
             print("".stringByAppendingFormat("%.2f",(Float(index) / Float(objectHandles.count) * 100)) + "%")
         }
     
