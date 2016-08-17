@@ -100,7 +100,7 @@ class TakePhoto3ViewController: UIViewController {
         //遷移する直前
         ad.save(ad.receivedData, key: "receivedData")
         ad.save(ad.receivedHandler, key: "receivedHandler")
-//        ad.save(ad.receivedInfo, key: "receivedInfo")
+        ad.save(ad.receivedInfo, key: "receivedInfo")
         self.performSegueWithIdentifier("receiveFinished", sender: self)
         
     }

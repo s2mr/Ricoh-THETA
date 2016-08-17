@@ -12,10 +12,14 @@ class TakePhoto2ViewController: UIViewController {
 
     let ad = UIApplication.sharedApplication().delegate as! AppDelegate
     var interbal:Int!
+    var limitedSec:Int = 0
+    var timer: NSTimer!
+    
+    @IBOutlet weak var secLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        limitedSec = interbal
         // Do any additional setup after loading the view.
     }
 
@@ -24,16 +28,51 @@ class TakePhoto2ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        secLabel.text = interbal.description
+        timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(dec), userInfo: nil, repeats: true)
+    }
+    
     @IBAction func stopButtonPushed(sender: AnyObject) {
         
         func a(session:PtpIpSession!) {
-//            session.terminateOpenCapture(0xFFFFFFFF)
+            session.terminateOpenCapture(0xFFFFFFFF)
         }
-        
-        ad.ptpConnection.operateSession(a)
+        timer.invalidate()
+        if ad.ptpConnection.connected(){
+            ad.ptpConnection.operateSession(a)
+        }
         
     }
     
+    var isOnce = true
+    
+    func dec() {
+        if limitedSec > 0 {
+            
+            if limitedSec == 1 {
+                //            if isOnce {
+                func a(session:PtpIpSession!) {
+                    //                    session.setTimelapseInterval(interbal * 1000)
+                    //                    session.setStillCaptureMode(0x0003)
+                    session.initiateCapture()
+                }
+                ad.ptpConnection.operateSession(a)
+                isOnce = false
+            }
+        limitedSec -= 1
+            dispatch_async(dispatch_get_main_queue(), {
+                self.secLabel.text = self.limitedSec.description
+            })
+        }else {
+//            }
+            limitedSec = interbal
+            dispatch_async(dispatch_get_main_queue(), {
+                self.secLabel.text = self.interbal.description
+            })
+        }
+    }
     
     
     

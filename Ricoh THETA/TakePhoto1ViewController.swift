@@ -28,12 +28,6 @@ class TakePhoto1ViewController: UIViewController, UIPickerViewDelegate, UIPicker
     }
     
     @IBAction func startButtonPushed(sender: AnyObject) {
-        func a(session:PtpIpSession!) {
-//            session.setTimelapseInterval(selectedValue * 1000)
-//            session.setStillCaptureMode(0x0003)
-//            session.initiateOpenCapture()
-        }
-        ad.ptpConnection.operateSession(a)
     }
     
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
@@ -52,14 +46,18 @@ class TakePhoto1ViewController: UIViewController, UIPickerViewDelegate, UIPicker
         selectedValue = pickerArray[row]
     }
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "to2" {
+            let vc = segue.destinationViewController as! TakePhoto2ViewController
+            vc.interbal = selectedValue
+        }
     }
-    */
+    
 
 }

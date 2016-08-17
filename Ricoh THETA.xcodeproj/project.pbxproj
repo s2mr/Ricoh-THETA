@@ -15,6 +15,9 @@
 		2027F5071D54544900DDAFB8 /* TakePhoto5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2027F5061D54544900DDAFB8 /* TakePhoto5ViewController.swift */; };
 		2027F5091D5454B800DDAFB8 /* TakePhoto6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2027F5081D5454B800DDAFB8 /* TakePhoto6ViewController.swift */; };
 		202C8E5C1D524F9F00A551B2 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 202C8E5B1D524F9F00A551B2 /* libiconv.tbd */; };
+		202E7B9E1D61DEBC003FEC26 /* HowToViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202E7B9D1D61DEBC003FEC26 /* HowToViewController.swift */; };
+		202E7BA21D62B719003FEC26 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 202E7BA11D62B719003FEC26 /* index.html */; };
+		202E7BA41D62E792003FEC26 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202E7BA31D62E792003FEC26 /* CollectionViewController.swift */; };
 		205404F71D5243790030AE21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205404F61D5243790030AE21 /* AppDelegate.swift */; };
 		205404F91D5243790030AE21 /* ConnectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205404F81D5243790030AE21 /* ConnectViewController.swift */; };
 		205404FC1D5243790030AE21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 205404FA1D5243790030AE21 /* Main.storyboard */; };
@@ -74,6 +77,10 @@
 		2054059A1D52441A0030AE21 /* PtpOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = 205405651D52441A0030AE21 /* PtpOperator.m */; };
 		2054059B1D52441A0030AE21 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 205405661D52441A0030AE21 /* README */; };
 		205405A11D5246400030AE21 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 205405A01D5246400030AE21 /* ImageIO.framework */; };
+		20A5A0A01D64A8270002FC7C /* UVSphere.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A5A0981D64A8270002FC7C /* UVSphere.m */; };
+		20A5A0A11D64A8270002FC7C /* GLRenderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A5A0991D64A8270002FC7C /* GLRenderView.m */; };
+		20A5A0A21D64A8270002FC7C /* glkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A5A09A1D64A8270002FC7C /* glkViewController.m */; };
+		20A5A0A31D64A8270002FC7C /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A5A09B1D64A8270002FC7C /* ImageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +92,9 @@
 		2027F5081D5454B800DDAFB8 /* TakePhoto6ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakePhoto6ViewController.swift; sourceTree = "<group>"; };
 		202C8E5B1D524F9F00A551B2 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		202C8E5D1D52505500A551B2 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		202E7B9D1D61DEBC003FEC26 /* HowToViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HowToViewController.swift; sourceTree = "<group>"; };
+		202E7BA11D62B719003FEC26 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = index.html; path = ../../../../../Desktop/index.html; sourceTree = "<group>"; };
+		202E7BA31D62E792003FEC26 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		205404F31D5243790030AE21 /* Ricoh THETA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ricoh THETA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		205404F61D5243790030AE21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		205404F81D5243790030AE21 /* ConnectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectViewController.swift; sourceTree = "<group>"; };
@@ -176,6 +186,14 @@
 		205405651D52441A0030AE21 /* PtpOperator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PtpOperator.m; sourceTree = "<group>"; };
 		205405661D52441A0030AE21 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		205405A01D5246400030AE21 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		20A5A0981D64A8270002FC7C /* UVSphere.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UVSphere.m; sourceTree = "<group>"; };
+		20A5A0991D64A8270002FC7C /* GLRenderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLRenderView.m; sourceTree = "<group>"; };
+		20A5A09A1D64A8270002FC7C /* glkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = glkViewController.m; sourceTree = "<group>"; };
+		20A5A09B1D64A8270002FC7C /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
+		20A5A09C1D64A8270002FC7C /* UVSphere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UVSphere.h; sourceTree = "<group>"; };
+		20A5A09D1D64A8270002FC7C /* glkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glkViewController.h; sourceTree = "<group>"; };
+		20A5A09E1D64A8270002FC7C /* GLRenderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLRenderView.h; sourceTree = "<group>"; };
+		20A5A09F1D64A8270002FC7C /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,17 +209,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2027F4FF1D54535300DDAFB8 /* Photographing */ = {
+		2027F4FF1D54535300DDAFB8 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				205404F81D5243790030AE21 /* ConnectViewController.swift */,
+				202E7BA31D62E792003FEC26 /* CollectionViewController.swift */,
 				201AAC1E1D53988D00967956 /* TakePhoto1ViewController.swift */,
 				2027F5001D5453F500DDAFB8 /* TakePhoto2ViewController.swift */,
 				2027F5021D54541800DDAFB8 /* TakePhoto3ViewController.swift */,
 				2027F5041D54542D00DDAFB8 /* TakePhoto4ViewController.swift */,
 				2027F5061D54544900DDAFB8 /* TakePhoto5ViewController.swift */,
 				2027F5081D5454B800DDAFB8 /* TakePhoto6ViewController.swift */,
+				202E7B9D1D61DEBC003FEC26 /* HowToViewController.swift */,
 			);
-			name = Photographing;
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 		205404EA1D5243790030AE21 = {
@@ -226,10 +247,10 @@
 		205404F51D5243790030AE21 /* Ricoh THETA */ = {
 			isa = PBXGroup;
 			children = (
-				2027F4FF1D54535300DDAFB8 /* Photographing */,
-				202C8E5D1D52505500A551B2 /* Bridging-Header.h */,
+				20A5A0A41D64A82E0002FC7C /* Resource */,
+				2027F4FF1D54535300DDAFB8 /* ViewControllers */,
 				205404F61D5243790030AE21 /* AppDelegate.swift */,
-				205404F81D5243790030AE21 /* ConnectViewController.swift */,
+				202C8E5D1D52505500A551B2 /* Bridging-Header.h */,
 				205404FA1D5243790030AE21 /* Main.storyboard */,
 				205404FD1D5243790030AE21 /* Assets.xcassets */,
 				205404FF1D5243790030AE21 /* LaunchScreen.storyboard */,
@@ -416,6 +437,22 @@
 			path = "lib-ricoh-theta_serializer";
 			sourceTree = "<group>";
 		};
+		20A5A0A41D64A82E0002FC7C /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				20A5A0981D64A8270002FC7C /* UVSphere.m */,
+				20A5A0991D64A8270002FC7C /* GLRenderView.m */,
+				20A5A09A1D64A8270002FC7C /* glkViewController.m */,
+				20A5A09B1D64A8270002FC7C /* ImageViewController.m */,
+				20A5A09C1D64A8270002FC7C /* UVSphere.h */,
+				20A5A09D1D64A8270002FC7C /* glkViewController.h */,
+				20A5A09E1D64A8270002FC7C /* GLRenderView.h */,
+				20A5A09F1D64A8270002FC7C /* ImageViewController.h */,
+				202E7BA11D62B719003FEC26 /* index.html */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -489,6 +526,7 @@
 				2054056C1D52441A0030AE21 /* PtpIpSession.html in Resources */,
 				205405671D52441A0030AE21 /* PtpConnection.html in Resources */,
 				205404FE1D5243790030AE21 /* Assets.xcassets in Resources */,
+				202E7BA21D62B719003FEC26 /* index.html in Resources */,
 				205405771D52441A0030AE21 /* disclosure.png in Resources */,
 				205405791D52441A0030AE21 /* library_background.png in Resources */,
 				2054056F1D52441A0030AE21 /* RicohEXIF.html in Resources */,
@@ -525,9 +563,14 @@
 				205405811D52441A0030AE21 /* LibLogging.mm in Sources */,
 				205404F91D5243790030AE21 /* ConnectViewController.swift in Sources */,
 				205405851D52441A0030AE21 /* bufferedsock.cpp in Sources */,
+				20A5A0A31D64A8270002FC7C /* ImageViewController.m in Sources */,
+				202E7BA41D62E792003FEC26 /* CollectionViewController.swift in Sources */,
 				2027F5071D54544900DDAFB8 /* TakePhoto5ViewController.swift in Sources */,
 				2027F5091D5454B800DDAFB8 /* TakePhoto6ViewController.swift in Sources */,
+				20A5A0A11D64A8270002FC7C /* GLRenderView.m in Sources */,
 				2054058F1D52441A0030AE21 /* PtpIpDevicePropDesc.mm in Sources */,
+				202E7B9E1D61DEBC003FEC26 /* HowToViewController.swift in Sources */,
+				20A5A0A01D64A8270002FC7C /* UVSphere.m in Sources */,
 				205405831D52441A0030AE21 /* ObjcLogger.mm in Sources */,
 				205405961D52441A0030AE21 /* variant.cpp in Sources */,
 				2054059A1D52441A0030AE21 /* PtpOperator.m in Sources */,
@@ -547,6 +590,7 @@
 				205405871D52441A0030AE21 /* exceptions.cpp in Sources */,
 				205405801D52441A0030AE21 /* RicohEXIF.mm in Sources */,
 				2054058B1D52441A0030AE21 /* ptpip_impl.cpp in Sources */,
+				20A5A0A21D64A8270002FC7C /* glkViewController.m in Sources */,
 				205405891D52441A0030AE21 /* ptp_packets.cpp in Sources */,
 				205404F71D5243790030AE21 /* AppDelegate.swift in Sources */,
 			);

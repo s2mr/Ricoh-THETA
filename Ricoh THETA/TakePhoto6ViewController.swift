@@ -38,13 +38,20 @@ class TakePhoto6ViewController: UIViewController, RPPreviewViewControllerDelegat
         setupCamera()
     }
     
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        if let _ = player {
+            player.stop()
+        }
+    }
+    
     @IBAction func startButtonPushed(sender: AnyObject) {
         let recorder = RPScreenRecorder.sharedRecorder()
         recorder.startRecordingWithMicrophoneEnabled(false) {[unowned self] (error) in
             if let unwrappedError = error {
                 print(unwrappedError.localizedDescription)
             } else {
-                
+                self.setHidden()
             }
         }
     }
@@ -73,18 +80,28 @@ class TakePhoto6ViewController: UIViewController, RPPreviewViewControllerDelegat
     
     @IBAction func viewTapped(sender: AnyObject) {
         print("View Tapped!!")
+//        タブバーが表示されている時
         if !(tabBarController?.tabBar.hidden)! {
-            tabBarController?.tabBar.hidden = true
-            navigationController?.navigationBarHidden = true
-            toolBar.hidden = true
-            UIApplication.sharedApplication().setStatusBarHidden(true, withAnimation: .None)
+            setHidden()
         }else {
-            tabBarController?.tabBar.hidden = false
-            navigationController?.navigationBarHidden = false
-            toolBar.hidden = false
-            UIApplication.sharedApplication().setStatusBarHidden(false, withAnimation: .None)
+           setShown()
         }
         
+    }
+    
+    func setHidden() {
+        tabBarController?.tabBar.hidden = true
+        navigationController?.navigationBarHidden = true
+        toolBar.hidden = true
+        UIApplication.sharedApplication().setStatusBarHidden(true, withAnimation: .None)
+    }
+    
+    func setShown() {
+        stopButtonPushed(self)
+        tabBarController?.tabBar.hidden = false
+        navigationController?.navigationBarHidden = false
+        toolBar.hidden = false
+        UIApplication.sharedApplication().setStatusBarHidden(false, withAnimation: .None)
     }
     
     
@@ -149,6 +166,10 @@ class TakePhoto6ViewController: UIViewController, RPPreviewViewControllerDelegat
         dismissViewControllerAnimated(true, completion: nil)
     }
     
+    func mediaPickerDidCancel(mediaPicker: MPMediaPickerController) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
     // メディアアイテムピッカーでアイテムを選択完了したときに呼び出される
     func mediaPicker(mediaPicker: MPMediaPickerController, didPickMediaItems mediaItemCollection: MPMediaItemCollection) {
         
@@ -181,15 +202,8 @@ class TakePhoto6ViewController: UIViewController, RPPreviewViewControllerDelegat
         dismissViewControllerAnimated(true, completion: nil)
         player.play()
     }
-
     
-    
-//    func createMaterial() {
-//        
-//        
-//    }
-
-    /*
+/*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -207,6 +221,18 @@ class MakeMaterial {
     init(data:NSData) {
         material.doubleSided = true
        self.material.diffuse.contents = UIImage(data: data)?.flipHorizontal()
+    }
+}
+
+extension TakePhoto6ViewController: RPScreenRecorderDelegate {
+    func screenRecorderDidChangeAvailability(screenRecorder: RPScreenRecorder) {
+//        screenRecorder.
+        
+        print("screen recorder did change availability")
+    }
+    
+    func screenRecorder(screenRecorder: RPScreenRecorder, didStopRecordingWithError error: NSError, previewViewController: RPPreviewViewController?) {
+        print("screen recorder did stop recording : \(error.localizedDescription)")
     }
 }
 

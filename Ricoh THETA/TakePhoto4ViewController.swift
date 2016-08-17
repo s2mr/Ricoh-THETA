@@ -12,15 +12,16 @@ class TakePhoto4ViewController: UIViewController, UICollectionViewDelegate, UICo
     
     let ad = UIApplication.sharedApplication().delegate as! AppDelegate
     var views = [UIView]()
-    var checkMark:UIView!
+//    var checkMark:UIView!
     var checkArray:NSMutableArray = []
     
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        checkMark = UIView(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
-        checkMark.backgroundColor = UIColor.cyanColor()
+        self.navigationController?.navigationBarHidden = true
+//        checkMark = UIView(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
+//        checkMark.backgroundColor = UIColor.cyanColor()
         // Do any additional setup after loading the view.
     }
 
@@ -31,15 +32,29 @@ class TakePhoto4ViewController: UIViewController, UICollectionViewDelegate, UICo
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        views = [UIView]()
+//        views = [UIView]()
         collectionView.reloadData()
     }
     
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        for _ in 1...ad.receivedData.count {
-            views.append(UIView(frame: CGRect(x: 0,y: 0,width: 30,height: 30)))
-//            ad.picTags.append(0)
+    @IBAction func doneButtonTapped(sender: AnyObject) {
+        if checkArray.count > 0 {
+            performSegueWithIdentifier("to5", sender: self)
+        } else {
+            let ac = UIAlertController(title: "エラー", message: "画像を選択してください", preferredStyle: .Alert)
+            let okButton = UIAlertAction(title: "OK", style: .Default, handler:{ (action: UIAlertAction) in
+                print("OK")
+            })
+            ac.addAction(okButton)
+            presentViewController(ac, animated: true, completion: nil)
         }
+    }
+    
+    
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+//        for _ in 0..<ad.receivedData.count {
+//            views.append(UIView(frame: CGRect(x: 0,y: 0,width: 30,height: 30)))
+////            ad.picTags.append(0)
+//        }
         return ad.receivedData.count
     }
     
@@ -120,6 +135,7 @@ class TakePhoto4ViewController: UIViewController, UICollectionViewDelegate, UICo
             //初期化
             ad.toShowImage.removeAll()
 
+//            古いものが最初に表示されるようにソート
             let sortedArray = checkArray.sort {$0.row < $1.row}
             
             for index in sortedArray {

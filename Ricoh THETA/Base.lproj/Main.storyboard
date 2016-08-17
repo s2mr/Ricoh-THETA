@@ -11,7 +11,7 @@
         <scene sceneID="3Ui-YB-IM2">
             <objects>
                 <navigationController id="Sk4-gP-9Jy" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="撮影" id="h8Z-uH-t7q"/>
+                    <tabBarItem key="tabBarItem" title="撮影" image="Old Time Camera" id="h8Z-uH-t7q"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Zog-Ds-Grt">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -49,7 +49,7 @@
                                 <state key="normal" title="撮影開始"/>
                                 <connections>
                                     <action selector="startButtonPushed:" destination="dLa-o4-Zn3" eventType="touchUpInside" id="aVu-V6-D2q"/>
-                                    <segue destination="CS7-Kj-uiZ" kind="show" id="dTP-sn-ICK"/>
+                                    <segue destination="CS7-Kj-uiZ" kind="show" identifier="to2" id="dTP-sn-ICK"/>
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ylj-ki-9hd">
@@ -117,6 +117,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="撮影中" id="p74-KC-H8W"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="secLabel" destination="UEO-5D-N7r" id="WhN-1i-Lat"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hoQ-GO-5ZX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -313,7 +316,7 @@
                                 <rect key="frame" x="329" y="588" width="30" height="30"/>
                                 <state key="normal" title="完了"/>
                                 <connections>
-                                    <segue destination="y96-1I-y3a" kind="show" identifier="to5" id="Q2A-46-Vw6"/>
+                                    <action selector="doneButtonTapped:" destination="Jej-8e-FN3" eventType="touchUpInside" id="zvu-ZG-VwV"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -333,6 +336,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="collectionView" destination="ZKa-pM-wau" id="jtv-GX-vn0"/>
+                        <segue destination="y96-1I-y3a" kind="show" identifier="to5" id="61v-2W-YQG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Vo-5u-XbG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -472,7 +476,7 @@
         <!--コレクション-->
         <scene sceneID="AvS-dr-bQf">
             <objects>
-                <viewController id="N40-mM-zYo" sceneMemberID="viewController">
+                <viewController id="N40-mM-zYo" customClass="CollectionViewController" customModule="Ricoh_THETA" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="P69-Fm-RPC"/>
                         <viewControllerLayoutGuide type="bottom" id="VmV-8z-FfM"/>
@@ -480,12 +484,89 @@
                     <view key="view" contentMode="scaleToFill" id="DBw-rp-QTu">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="zvt-es-0Jl">
+                                <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MNT-Kw-Jex">
+                                    <size key="itemSize" width="153" height="241"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="nXr-o3-1OR" customClass="CustomCellForCollection" customModule="Ricoh_THETA" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="64" width="153" height="241"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="153" height="241"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jb1-tX-Wgb">
+                                                    <rect key="frame" x="0.0" y="0.0" width="153" height="241"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16/08/2016" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OZ1-xC-uLb">
+                                                    <rect key="frame" x="0.0" y="0.0" width="153" height="35"/>
+                                                    <color key="backgroundColor" red="0.86504600249999997" green="0.86504600249999997" blue="0.86504600249999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="RiV-Ph-ApZ"/>
+                                                        <constraint firstAttribute="height" constant="35" id="ytq-aV-3Ix"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="30"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="RiV-Ph-ApZ"/>
+                                                        </mask>
+                                                    </variation>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="jb1-tX-Wgb" secondAttribute="bottom" id="DoD-H7-DgO"/>
+                                            <constraint firstItem="OZ1-xC-uLb" firstAttribute="top" secondItem="nXr-o3-1OR" secondAttribute="topMargin" id="L8l-jR-xvF"/>
+                                            <constraint firstAttribute="trailing" secondItem="OZ1-xC-uLb" secondAttribute="trailing" id="Mbs-OF-M7N"/>
+                                            <constraint firstItem="OZ1-xC-uLb" firstAttribute="centerX" secondItem="nXr-o3-1OR" secondAttribute="centerX" id="PYS-WS-WA2"/>
+                                            <constraint firstItem="OZ1-xC-uLb" firstAttribute="top" secondItem="nXr-o3-1OR" secondAttribute="top" id="Rah-C3-j43"/>
+                                            <constraint firstItem="OZ1-xC-uLb" firstAttribute="leading" secondItem="nXr-o3-1OR" secondAttribute="leading" id="XPb-es-fz8"/>
+                                            <constraint firstItem="jb1-tX-Wgb" firstAttribute="top" secondItem="nXr-o3-1OR" secondAttribute="top" id="mjf-Z9-RWg"/>
+                                            <constraint firstItem="jb1-tX-Wgb" firstAttribute="leading" secondItem="nXr-o3-1OR" secondAttribute="leading" id="qWJ-p1-BSU"/>
+                                            <constraint firstAttribute="trailing" secondItem="jb1-tX-Wgb" secondAttribute="trailing" id="snC-Dq-ALP"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="L8l-jR-xvF"/>
+                                                <exclude reference="PYS-WS-WA2"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <outlet property="dateLabel" destination="OZ1-xC-uLb" id="7NF-u5-O3p"/>
+                                            <outlet property="imageView" destination="jb1-tX-Wgb" id="5XL-9O-yL6"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="N40-mM-zYo" id="hI6-Af-j8C"/>
+                                    <outlet property="delegate" destination="N40-mM-zYo" id="Nmb-BR-xyh"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zvt-es-0Jl" firstAttribute="top" secondItem="P69-Fm-RPC" secondAttribute="bottom" id="Tg9-HF-5rz"/>
+                            <constraint firstItem="VmV-8z-FfM" firstAttribute="top" secondItem="zvt-es-0Jl" secondAttribute="bottom" id="lns-1K-Nbr"/>
+                            <constraint firstAttribute="trailing" secondItem="zvt-es-0Jl" secondAttribute="trailing" id="mRZ-22-THf"/>
+                            <constraint firstItem="zvt-es-0Jl" firstAttribute="leading" secondItem="DBw-rp-QTu" secondAttribute="leading" id="ziL-5b-3Xa"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="コレクション" id="EjH-pv-LyD"/>
+                    <tabBarItem key="tabBarItem" title="コレクション" image="Video Playlist" id="EjH-pv-LyD"/>
                     <navigationItem key="navigationItem" title="コレクション" id="FdN-eP-C5M"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="collectionView" destination="zvt-es-0Jl" id="coh-TK-x7v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G9n-4q-OIg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -494,7 +575,7 @@
         <!--使い方-->
         <scene sceneID="1jt-F0-BUo">
             <objects>
-                <viewController title="使い方" id="oHO-WW-Gga" sceneMemberID="viewController">
+                <viewController title="使い方" id="oHO-WW-Gga" customClass="HowToViewController" customModule="Ricoh_THETA" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ihy-y2-XdU"/>
                         <viewControllerLayoutGuide type="bottom" id="Tqb-OR-0Sc"/>
@@ -503,26 +584,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="WIW-IO-pKT">
-                                <rect key="frame" x="16" y="64" width="288" height="367"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HjO-mH-m8D">
+                                <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Tqb-OR-0Sc" firstAttribute="top" secondItem="WIW-IO-pKT" secondAttribute="bottom" id="ItP-90-ZOe"/>
-                            <constraint firstItem="WIW-IO-pKT" firstAttribute="top" secondItem="ihy-y2-XdU" secondAttribute="bottom" id="MP2-d0-YMm"/>
-                            <constraint firstItem="WIW-IO-pKT" firstAttribute="leading" secondItem="9Vx-Sn-s0g" secondAttribute="leadingMargin" id="aed-Z8-0mG"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="WIW-IO-pKT" secondAttribute="trailing" id="hqo-te-nkY"/>
+                            <constraint firstAttribute="trailing" secondItem="HjO-mH-m8D" secondAttribute="trailing" id="Hac-Zp-Xah"/>
+                            <constraint firstItem="HjO-mH-m8D" firstAttribute="top" secondItem="ihy-y2-XdU" secondAttribute="bottom" id="Tc7-Nx-vXk"/>
+                            <constraint firstItem="Tqb-OR-0Sc" firstAttribute="top" secondItem="HjO-mH-m8D" secondAttribute="bottom" id="bTn-pR-ezW"/>
+                            <constraint firstItem="HjO-mH-m8D" firstAttribute="leading" secondItem="9Vx-Sn-s0g" secondAttribute="leading" id="p0v-Zm-pZj"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="使い方" id="kiP-9t-RLK"/>
+                    <tabBarItem key="tabBarItem" title="使い方" image="Help" id="kiP-9t-RLK"/>
                     <navigationItem key="navigationItem" title="Title" id="H5J-sR-kqR"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="webView" destination="HjO-mH-m8D" id="yLI-fC-2IG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="coa-KS-qgg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -567,7 +648,7 @@
                             <constraint firstItem="s8Q-H7-UKK" firstAttribute="centerY" secondItem="uvb-8X-g5p" secondAttribute="centerY" multiplier="1.2" id="nN2-0e-H78"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="接続" id="48j-MJ-Qtu"/>
+                    <tabBarItem key="tabBarItem" title="接続" image="Wi-Fi" id="48j-MJ-Qtu"/>
                     <navigationItem key="navigationItem" title="接続" id="RmC-5b-q60"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -604,6 +685,12 @@
             <point key="canvasLocation" x="-936" y="203"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Help" width="25" height="25"/>
+        <image name="Old Time Camera" width="25" height="25"/>
+        <image name="Video Playlist" width="25" height="25"/>
+        <image name="Wi-Fi" width="25" height="25"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="QGK-eQ-LZe"/>
     </inferredMetricsTieBreakers>

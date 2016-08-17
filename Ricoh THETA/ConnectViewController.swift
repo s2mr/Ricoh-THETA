@@ -21,7 +21,10 @@ class ConnectViewController: UIViewController{
         super.viewDidLoad()
         
         navigationItem.title = "接続"
-        
+
+        let myViewControllers = self.tabBarController!.viewControllers
+        _ = (myViewControllers![3] as! HowToViewController).view // 1...B TAB index
+//        _ = (myViewControllers![2] as! CollectionViewController).view // 1...B TAB index
         ad.ptpConnection = PtpConnection()
         ad.ptpConnection.setTargetIp("192.168.1.1")
         
