@@ -81,6 +81,7 @@
 		20A5A0A11D64A8270002FC7C /* GLRenderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A5A0991D64A8270002FC7C /* GLRenderView.m */; };
 		20A5A0A21D64A8270002FC7C /* glkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A5A09A1D64A8270002FC7C /* glkViewController.m */; };
 		20A5A0A31D64A8270002FC7C /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A5A09B1D64A8270002FC7C /* ImageViewController.m */; };
+		20A5A0A71D64A8F40002FC7C /* PtpObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A5A0A51D64A8F40002FC7C /* PtpObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -194,6 +195,9 @@
 		20A5A09D1D64A8270002FC7C /* glkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glkViewController.h; sourceTree = "<group>"; };
 		20A5A09E1D64A8270002FC7C /* GLRenderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLRenderView.h; sourceTree = "<group>"; };
 		20A5A09F1D64A8270002FC7C /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		20A5A0A51D64A8F40002FC7C /* PtpObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PtpObject.m; sourceTree = "<group>"; };
+		20A5A0A61D64A8F40002FC7C /* PtpObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PtpObject.h; sourceTree = "<group>"; };
+		20A5A0A81D64A9300002FC7C /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -440,12 +444,15 @@
 		20A5A0A41D64A82E0002FC7C /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				20A5A0A81D64A9300002FC7C /* Constants.h */,
+				20A5A0A51D64A8F40002FC7C /* PtpObject.m */,
+				20A5A0A61D64A8F40002FC7C /* PtpObject.h */,
 				20A5A0981D64A8270002FC7C /* UVSphere.m */,
 				20A5A0991D64A8270002FC7C /* GLRenderView.m */,
 				20A5A09A1D64A8270002FC7C /* glkViewController.m */,
+				20A5A09D1D64A8270002FC7C /* glkViewController.h */,
 				20A5A09B1D64A8270002FC7C /* ImageViewController.m */,
 				20A5A09C1D64A8270002FC7C /* UVSphere.h */,
-				20A5A09D1D64A8270002FC7C /* glkViewController.h */,
 				20A5A09E1D64A8270002FC7C /* GLRenderView.h */,
 				20A5A09F1D64A8270002FC7C /* ImageViewController.h */,
 				202E7BA11D62B719003FEC26 /* index.html */,
@@ -565,6 +572,7 @@
 				205405851D52441A0030AE21 /* bufferedsock.cpp in Sources */,
 				20A5A0A31D64A8270002FC7C /* ImageViewController.m in Sources */,
 				202E7BA41D62E792003FEC26 /* CollectionViewController.swift in Sources */,
+				20A5A0A71D64A8F40002FC7C /* PtpObject.m in Sources */,
 				2027F5071D54544900DDAFB8 /* TakePhoto5ViewController.swift in Sources */,
 				2027F5091D5454B800DDAFB8 /* TakePhoto6ViewController.swift in Sources */,
 				20A5A0A11D64A8270002FC7C /* GLRenderView.m in Sources */,
