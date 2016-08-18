@@ -138,7 +138,6 @@ class TakePhoto6ViewController: UIViewController, RPPreviewViewControllerDelegat
         material.diffuse.contents = UIImage(data: ad.toShowImage.first!)?.flipHorizontal()
         sphereGeometry.firstMaterial = material
         
-        
 //        var materials = [SCNMaterial]()
 //        for j in 1..<ad.receivedData.count {
 //            print("マテリアル追加")

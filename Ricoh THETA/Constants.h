@@ -35,7 +35,7 @@
 #define INERTIA_1ST_SHORT_ADJUST(a)     (a / 3.0)
 #define INERTIA_1ST_LONG_ADJUST(a)      (a / 2.0)
 #define INERTIA_LONG_ADJUST(a)          (1.4 + a * 0.1)
-#define INERTIA_SHORT_ADJUST(a)         (2.9 + a * 0.1)
+#define INERTIA_SHORT_ADJUST(a)         (20.9 + a * 0.1)
 #define INERTIA_NONE                    (1.0)
 #define INERTIA_STOP_LIMT               (0.000002)
 

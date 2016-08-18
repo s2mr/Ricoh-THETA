@@ -15,16 +15,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var ptpConnection :PtpConnection!
     
     var receivedHandler = [Int]()
-    var receivedData = [NSData]()
+    var receivedData = [NSMutableData]()
     var receivedInfo = [PtpIpObjectInfo]()
-    var toShowImage = [NSData]()
+    var toShowImage = [NSMutableData]()
     
     func load(key:String) {
         let ud = NSUserDefaults()
         let object = ud.objectForKey(key)
         if object != nil {
             if key == "receivedData" {
-                self.receivedData = object as! [NSData]
+                self.receivedData = object as! [NSMutableData]
             }else if key == "receivedHandler" {
                 self.receivedHandler = object as! [Int]
             }else if key == "receivedInfo" {

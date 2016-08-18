@@ -82,6 +82,7 @@
 		20A5A0A21D64A8270002FC7C /* glkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A5A09A1D64A8270002FC7C /* glkViewController.m */; };
 		20A5A0A31D64A8270002FC7C /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A5A09B1D64A8270002FC7C /* ImageViewController.m */; };
 		20A5A0A71D64A8F40002FC7C /* PtpObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A5A0A51D64A8F40002FC7C /* PtpObject.m */; };
+		20A5A0AC1D64AB610002FC7C /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A5A0AB1D64AB600002FC7C /* PlayViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -198,6 +199,7 @@
 		20A5A0A51D64A8F40002FC7C /* PtpObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PtpObject.m; sourceTree = "<group>"; };
 		20A5A0A61D64A8F40002FC7C /* PtpObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PtpObject.h; sourceTree = "<group>"; };
 		20A5A0A81D64A9300002FC7C /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		20A5A0AB1D64AB600002FC7C /* PlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +227,7 @@
 				2027F5061D54544900DDAFB8 /* TakePhoto5ViewController.swift */,
 				2027F5081D5454B800DDAFB8 /* TakePhoto6ViewController.swift */,
 				202E7B9D1D61DEBC003FEC26 /* HowToViewController.swift */,
+				20A5A0AB1D64AB600002FC7C /* PlayViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -562,6 +565,7 @@
 				2027F5031D54541800DDAFB8 /* TakePhoto3ViewController.swift in Sources */,
 				205405861D52441A0030AE21 /* bytestream.cpp in Sources */,
 				205405981D52441A0030AE21 /* PtpConnection.m in Sources */,
+				20A5A0AC1D64AB610002FC7C /* PlayViewController.swift in Sources */,
 				205405841D52441A0030AE21 /* basictypes.cpp in Sources */,
 				205405921D52441A0030AE21 /* PtpIpObjectInfo.mm in Sources */,
 				2054058E1D52441A0030AE21 /* PtpIpDeviceInfo.mm in Sources */,

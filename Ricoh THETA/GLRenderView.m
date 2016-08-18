@@ -317,8 +317,8 @@ NSString *fragmentShader = @""
  * @param event Event
  */
 -(void) touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
-    //CGPoint movePos = [[touches anyObject] locationInView:self];
-    //NSLog(@"touchesMoved x = %f, y = %f", movePos.x, movePos.y);
+//    CGPoint movePos = [[touches anyObject] locationInView:self];
+//    NSLog(@"touchesMoved x = %f, y = %f", movePos.x, movePos.y);
     return;
 }
 

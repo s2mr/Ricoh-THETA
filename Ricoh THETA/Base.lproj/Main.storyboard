@@ -389,6 +389,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="最終調整" id="Rvo-Cb-vDL"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <segue destination="5VS-rp-kuw" kind="show" identifier="otameshi" id="nTs-37-eN5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NOw-NG-j6v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -452,26 +455,40 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2038" y="-97"/>
+            <point key="canvasLocation" x="2150" y="-97"/>
         </scene>
-        <!--Take Photo6 View Controller-->
+        <!--Play View Controller-->
         <scene sceneID="KgK-uP-5je">
             <objects>
-                <viewController id="5VS-rp-kuw" customClass="TakePhoto6ViewController" customModule="Ricoh_THETA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5VS-rp-kuw" customClass="PlayViewController" customModule="Ricoh_THETA" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Yy8-E0-Ybr"/>
                         <viewControllerLayoutGuide type="bottom" id="hu5-yu-Nkf"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Yxl-EU-Snq">
+                    <view key="view" contentMode="scaleToFill" id="Yxl-EU-Snq" customClass="GLKView">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LMz-1p-1vQ">
+                                <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hu5-yu-Nkf" firstAttribute="top" secondItem="LMz-1p-1vQ" secondAttribute="bottom" id="TLb-Gb-Gku"/>
+                            <constraint firstAttribute="trailing" secondItem="LMz-1p-1vQ" secondAttribute="trailing" id="XOG-tv-lkO"/>
+                            <constraint firstItem="LMz-1p-1vQ" firstAttribute="leading" secondItem="Yxl-EU-Snq" secondAttribute="leading" id="nv0-DQ-lC9"/>
+                            <constraint firstItem="LMz-1p-1vQ" firstAttribute="top" secondItem="Yy8-E0-Ybr" secondAttribute="bottom" id="zNf-H0-wyY"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="imageView" destination="LMz-1p-1vQ" id="GmY-DI-Shd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mni-r3-sOQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2425" y="-97"/>
+            <point key="canvasLocation" x="2038" y="-618"/>
         </scene>
         <!--コレクション-->
         <scene sceneID="AvS-dr-bQf">
