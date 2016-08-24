@@ -26,7 +26,7 @@ class HowToViewController: UIViewController {
     
     func setupWebView() {
         // index.htmlのパスを取得する
-        let path:String = NSBundle.mainBundle().pathForResource("index", ofType: "html")!
+        let path:String = NSBundle.mainBundle().pathForResource("howTo", ofType: "html")!
         let url = NSURL(fileURLWithPath: path)
         
         // リクエストを生成する

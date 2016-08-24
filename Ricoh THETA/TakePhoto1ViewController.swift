@@ -14,7 +14,7 @@ class TakePhoto1ViewController: UIViewController, UIPickerViewDelegate, UIPicker
 //    @IBOutlet weak var intervalLabel: UITextField!
     @IBOutlet weak var pickerView: UIPickerView!
     
-    let pickerArray = [5,10,15]
+    let pickerArray = [3,4,5,10,15,20,25,30]
     var selectedValue = 5
 
     override func viewDidLoad() {

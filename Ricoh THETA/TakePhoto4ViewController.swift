@@ -11,18 +11,13 @@ import UIKit
 class TakePhoto4ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     let ad = UIApplication.sharedApplication().delegate as! AppDelegate
-    var views = [UIView]()
-//    var checkMark:UIView!
+//    var views = [UIView]()
     var checkArray:NSMutableArray = []
     
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.navigationBarHidden = true
-//        checkMark = UIView(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
-//        checkMark.backgroundColor = UIColor.cyanColor()
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,13 +27,13 @@ class TakePhoto4ViewController: UIViewController, UICollectionViewDelegate, UICo
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-//        views = [UIView]()
+        self.navigationController?.navigationBarHidden = true
         collectionView.reloadData()
     }
     
     @IBAction func doneButtonTapped(sender: AnyObject) {
         if checkArray.count > 0 {
-            performSegueWithIdentifier("to5", sender: self)
+            performSegueWithIdentifier("to6", sender: self)
         } else {
             let ac = UIAlertController(title: "エラー", message: "画像を選択してください", preferredStyle: .Alert)
             let okButton = UIAlertAction(title: "OK", style: .Default, handler:{ (action: UIAlertAction) in
@@ -51,10 +46,6 @@ class TakePhoto4ViewController: UIViewController, UICollectionViewDelegate, UICo
     
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        for _ in 0..<ad.receivedData.count {
-//            views.append(UIView(frame: CGRect(x: 0,y: 0,width: 30,height: 30)))
-////            ad.picTags.append(0)
-//        }
         return ad.receivedData.count
     }
     
@@ -72,21 +63,16 @@ class TakePhoto4ViewController: UIViewController, UICollectionViewDelegate, UICo
         cell.imageView.image = img
     
         if checkArray.containsObject(indexPath){
-            let checkImg = UIImage(named: "checkMark")
+            let checkImg = UIImage(named: "ok")
             let checkView = UIImageView(frame: CGRect(x: 0, y: 0, width: (checkImg?.size.width)!, height: (checkImg?.size.height)!))
+            checkView.backgroundColor = UIColor.grayColor()
             checkView.tag = 100
             checkView.image = checkImg
-            
             print("セル作成！")
-//            print(indexPath.row)
-            
-//            views[indexPath.row].backgroundColor = UIColor.cyanColor()
             cell.contentView.addSubview(checkView)
         }else{
             print("何も表示しません")
         }
-        
-//        cell.dateLabel.text = ad.receivedInfo[indexPath.row].capture_date.decription
         return cell
     }
     
@@ -95,14 +81,6 @@ class TakePhoto4ViewController: UIViewController, UICollectionViewDelegate, UICo
         
         print("セル選択:" + indexPath.row.description)
         //選択状態：１　、非選択状態：０
-//        if ad.picTags[indexPath.row] == 0 {
-//            views[indexPath.row].backgroundColor = UIColor.cyanColor()
-//            ad.picTags[indexPath.row] = 1
-//            collectionView.cellForItemAtIndexPath(indexPath)?.addSubview(views[indexPath.row])
-//        }else {
-//            ad.picTags[indexPath.row] = 0
-//            views[indexPath.row].removeFromSuperview()
-//        }
         if checkArray.containsObject(indexPath){
             print("チェックArrayから削除！")
             checkArray.removeObject(indexPath)
@@ -122,16 +100,7 @@ class TakePhoto4ViewController: UIViewController, UICollectionViewDelegate, UICo
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        if segue.identifier == "to5"{
-            
-            //先頭から削除すると要素数が変わるため後ろから削除
-//            for i in (0..<ad.receivedData.count).reverse(){
-//                print("Cellのタグ: " + ad.picTags[i].description)
-//                if ad.picTags[i] == 0 {
-//                    ad.receivedData.removeAtIndex(i)
-//                }
-//            }
-            
+        if segue.identifier == "to6"{
             //初期化
             ad.toShowImage.removeAll()
 

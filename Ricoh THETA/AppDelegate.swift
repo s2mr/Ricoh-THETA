@@ -27,8 +27,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 self.receivedData = object as! [NSMutableData]
             }else if key == "receivedHandler" {
                 self.receivedHandler = object as! [Int]
-            }else if key == "receivedInfo" {
-                self.receivedInfo = object as! [PtpIpObjectInfo]
+//            }else if key == "receivedInfo" {
+//                self.receivedInfo = object as! [PtpIpObjectInfo]
             }
         }
         

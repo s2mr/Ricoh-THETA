@@ -18,6 +18,7 @@ class TakePhoto6ViewController: UIViewController, RPPreviewViewControllerDelegat
     var sphereGeometry:SCNSphere!
     var scene:SCNScene!
     var player :AVAudioPlayer!
+    var timer:NSTimer!
     
     @IBOutlet weak var toolBar: UIToolbar!
     
@@ -40,8 +41,12 @@ class TakePhoto6ViewController: UIViewController, RPPreviewViewControllerDelegat
     
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
+//        音楽を止める
         if let _ = player {
             player.stop()
+        }
+        if let _ = timer {
+            timer.invalidate()
         }
     }
     
@@ -86,8 +91,11 @@ class TakePhoto6ViewController: UIViewController, RPPreviewViewControllerDelegat
         }else {
            setShown()
         }
-        
     }
+    
+    @IBAction func replayButtonTapped(sender: AnyObject) {
+    }
+    
     
     func setHidden() {
         tabBarController?.tabBar.hidden = true
@@ -116,6 +124,10 @@ class TakePhoto6ViewController: UIViewController, RPPreviewViewControllerDelegat
         cameraNode = SCNNode()
         cameraNode.camera = SCNCamera()
         cameraNode.position = SCNVector3Zero
+        cameraNode.camera?.automaticallyAdjustsZRange = true
+        cameraNode.position.z = 15
+        cameraNode.camera?.xFov = 80
+        cameraNode.camera?.yFov = 80
         scene.rootNode.addChildNode(cameraNode)
         
         //環境光を設定します。
@@ -125,40 +137,54 @@ class TakePhoto6ViewController: UIViewController, RPPreviewViewControllerDelegat
         ambientLightNode.light?.color = UIColor.whiteColor()
         scene.rootNode.addChildNode(ambientLightNode)
         
-        
-//        createMaterial()
-        
-//        NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: #selector(createMaterial), userInfo: nil, repeats: true)
-        
+//        
+//        if let _ = timer {
+//            timer.fire()
+//        }else {
+            timer =  NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: #selector(change), userInfo: nil, repeats: true)
+//        }
         
         //球体を作り中にカメラを入れます。
-        let sphereGeometry = SCNSphere(radius: 20)
+        sphereGeometry = SCNSphere(radius: 20)
         let material = SCNMaterial()
         material.doubleSided = true
         material.diffuse.contents = UIImage(data: ad.toShowImage.first!)?.flipHorizontal()
         sphereGeometry.firstMaterial = material
         
 //        var materials = [SCNMaterial]()
-//        for j in 1..<ad.receivedData.count {
+//        for j in 1..<ad.toShowImage.count {
 //            print("マテリアル追加")
 //            let material = SCNMaterial()
 //            material.doubleSided = true
-//            material.diffuse.contents = UIImage(data:ad.receivedData[j])?.flipHorizontal()
+//            material.diffuse.contents = UIImage(data:ad.toShowImage[j])?.flipHorizontal()
 //            materials.append(material)
 //        }
 //        sphereGeometry.materials = materials
         
         let boxNode = SCNNode(geometry: sphereGeometry)
-//        boxNode.rotation = SCNVector4(x: 3.0, y: 1.0, z: 0.0, w: Float(M_PI * 1));
-        // アニメーション
-//        var spin = CABasicAnimation(keyPath: "rotation")
-//        spin.toValue = NSValue(SCNVector4:SCNVector4(x: 0.5, y: 1, z: 0.1, w: Float(M_PI) * 2.0))
-//        spin.duration = 5
-//        spin.repeatCount = HUGE
-//        boxNode.addAnimation(spin, forKey: "spin")
-
         scene.rootNode.addChildNode(boxNode)
 
+    }
+    
+    var i = 1
+    func change() {
+        if i < ad.toShowImage.count {
+            print("よばれた")
+//            dispatch_async(dispatch_get_main_queue(), {
+            self.sphereGeometry.firstMaterial?.diffuse.contents = UIImage(data: self.ad.toShowImage[self.i])
+//            })
+            i += 1
+        }else {
+//            timer.invalidate()
+            i = 0
+            self.sphereGeometry.firstMaterial?.diffuse.contents = UIImage(data: self.ad.toShowImage[self.i])
+            i += 1
+//            play()
+        }
+    }
+    
+    func play() {
+        setupCamera()
     }
     
     func previewControllerDidFinish(previewController: RPPreviewViewController) {
@@ -179,24 +205,6 @@ class TakePhoto6ViewController: UIViewController, RPPreviewViewControllerDelegat
         // 再生開始
         player.enableRate = true
         player.numberOfLoops = -1
-//        slider.maximumValue = Float(player.duration)
-        
-//        pauseLabel.setTitle("▶︎", forState: .Normal)
-        
-//        songLabel.text = mediaItemCollection.representativeItem?.title
-        
-        let a = Int(player.duration / 60)
-        
-        var b = Int(player.duration % 60).description
-        
-        if b.characters.count == 1 {
-            b = "0" + b
-        }
-        
-//        ichiLabelB.text = "\(a)" + ":" + b
-        
-//        ad.songArray.append(mediaItemCollection)
-        
         // ピッカーを閉じ、破棄する
         dismissViewControllerAnimated(true, completion: nil)
         player.play()
@@ -225,8 +233,6 @@ class MakeMaterial {
 
 extension TakePhoto6ViewController: RPScreenRecorderDelegate {
     func screenRecorderDidChangeAvailability(screenRecorder: RPScreenRecorder) {
-//        screenRecorder.
-        
         print("screen recorder did change availability")
     }
     

@@ -36,12 +36,15 @@ class CollectionViewController: UIViewController, UICollectionViewDelegate, UICo
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+        collectionView.reloadData()
     }
     
     /*Delegate Method */
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         print("CollectionView Reload!!")
+        print("collectionImage.count : " + collectionImage.count.description)
+        print("assets.count : " + assets.count.description)
         return collectionImage.count
     }
     
@@ -60,6 +63,8 @@ class CollectionViewController: UIViewController, UICollectionViewDelegate, UICo
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         let manager = PHImageManager()
         let options = PHVideoRequestOptions()
+        options.deliveryMode = .Automatic
+        options.networkAccessAllowed = true
         manager.requestAVAssetForVideo(assets[indexPath.row]!, options: options, resultHandler: { avAsset, audioMix, info in
           self.play(avAsset!)
         })
